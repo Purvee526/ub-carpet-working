@@ -1,11 +1,15 @@
-// src/App.jsx (ЗӨВ ХУВИЛБАР)
 
-import Header from './components/Header';
-import Hero from './components/Hero';
-import FeaturedBrands from './components/FeaturedBrands'; 
-import FilterBar from './components/FilterBar';
-import ProductList from './components/ProductList';
-import Sidebar from './components/Sidebar';
+import React from 'react';
+// Хуучин CSS файлууд байвал энд дуудна
+import './App.css'; 
+
+// Компонентуудыг ".jsx" өргөтгөлтэй нь хамт дуудна
+import Header from './components/Header.jsx';
+import Hero from './components/Hero.jsx';
+import FeaturedBrands from './components/FeaturedBrands.jsx';
+import FilterBar from './components/FilterBar.jsx';
+import ProductList from './components/ProductList.jsx';
+import Sidebar from './components/Sidebar.jsx';
 
 import './App.css';
 

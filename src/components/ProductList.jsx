@@ -1,17 +1,16 @@
 // src/components/ProductList.jsx
+
 import React from 'react';
 import ProductCard from './ProductCard';
+import { productsData } from '../data'; // <-- data.js-ээс зөв нэрээр нь импортлоно
 
 const ProductList = () => {
   return (
-    // Энэ бол хамгийн зөв, энгийн арга
-    <div className="grid grid-cols-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
+    // Энд Grid эсвэл Flexbox-оо ашиглаж болно
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px' }}>
+      {productsData.map(product => (
+        <ProductCard key={product.id} product={product} />
+      ))}
     </div>
   );
 };

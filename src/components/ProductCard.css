@@ -1,71 +1,149 @@
 /* src/components/ProductCard.css */
 
-.product-card {
+/* Картын үндсэн хүрээ */
+.card-container {
   border: 1px solid #e0e0e0;
   border-radius: 8px;
-  overflow: hidden; /* Булан тохойлгоход зураг илүү гарахгүй */
+  overflow: hidden;
   background-color: #ffffff;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   display: flex;
   flex-direction: column;
 }
 
-.product-card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  transform: translateY(-5px); /* Дээрээсээ бага зэрэг хөөрөх эффект */
+.card-arrows {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  
+  /* Анх харагдахгүй, хулгана очиход гарч ирнэ */
+  opacity: 0;
+  transition: opacity 0.s ease;
 }
 
-.product-image-container {
+.card-container:hover .card-arrows {
+  opacity: 1;
+}
+
+/* Нэг ширхэг сумын товчлуур */
+.arrow-button {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.arrow-button:hover {
+  background-color: #fff;
+}
+
+/* Сумны icon-ы хэмжээ */
+.arrow-button .icon {
+  width: 20px;
+  height: 20px;
+  color: #555;
+}
+
+.card-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+/* Зургийг агуулсан хэсэг */
+.card-image-wrapper {
   width: 100%;
-  padding-top: 125%; /* Зургийн харьцааг хадгалах (4:5 харьцаа) */
   position: relative;
   background-color: #f5f5f5;
 }
 
-.product-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Зургийг таслалгүйгээр дүүргэх */
+/* Зураг өөрөө */
+.card-image {
+  display: block;
+  width: 80%;
+  aspect-ratio: 4 / 5;
+  object-fit: contain; /* Зураг бүтэн харагдана */
+  margin: 20px auto;
 }
 
-.product-info {
-  padding: 15px;
+/* Мэдээллийг агуулсан хэсэг */
+.card-info {
+  padding: 16px;
   text-align: left;
+  display: block;
+  padding: 16px;
+  text-align: left;
+  
 }
 
-.product-brand {
-  font-size: 12px;
-  color: #757575;
-  margin: 0 0 5px 0;
-  text-transform: uppercase;
-}
-
-.product-name {
-  font-size: 16px;
+/* Брэнд, нэр, үнэ гэх мэт текстүүд */
+.card-brand {
+  font-size: 14px;
   font-weight: 600;
   color: #333;
-  margin: 0 0 10px 0;
+  margin: 0 0 8px 0;
 }
 
-.product-price {
-  font-size: 15px;
+.card-details {
+  font-size: 12px;
+  color: #757575;
+  margin: 0 0 12px 0;
+}
+
+.card-sizes, .card-colors {
+  margin-top: 12px;
+}
+
+.card-label {
+  font-size: 12px;
   font-weight: 500;
-  color: #000;
-  margin: 0 0 15px 0;
+  color: #555;
+  display: block;
+  margin-bottom: 6px;
 }
 
-.product-colors {
+/* Хэмжээний товчнууд */
+.card-sizes-list {
   display: flex;
-  gap: 6px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.size-button {
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px 8px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.size-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Өнгөний сонголтууд */
+.card-colors-list {
+  display: flex;
+  gap: 8px;
 }
 
 .color-swatch {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%; /* Дугуй болгох */
-  border: 1px solid #ddd;
-  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px #ddd; /* Илүү гоё хүрээ */
+  cursor: pointer;
 }
