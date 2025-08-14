@@ -19,19 +19,28 @@ const ProductCard = ({ product }) => {
     setImgIndex(prev => prev === product.images.length - 1 ? 0 : prev + 1);
   };
 
-  return (
+ return (
     <div className="card-container">
-      {/* зурагны хэсэг */}
+      
+      {/* 
+        Зураг болон сумыг агуулсан шинэ "wrapper". 
+        ЭНЭ ХЭСЭГТ ӨӨРЧЛӨЛТ ОРСОН.
+      */}
       <div className="card-image-wrapper">
         <img
           src={product.images[imgIndex]}
           alt={product.brand}
           className="card-image"
         />
-      </div>
-      <div className="card-arrows">
-        <button className="arrow-button left-arrow" onClick={handlePrev}><ChevronLeftIcon /></button>
-        <button className="arrow-button right-arrow" onClick={handleNext}><ChevronRightIcon /></button>
+        {/* Сумнууд ЗУРАГТАЙГАА хамт нэг "wrapper" дотор байх ёстой */}
+        <div className="card-arrows">
+           <button className="arrow-button" onClick={handlePrev}>
+              &lt;
+            </button>
+            <button className="arrow-button" onClick={handleNext}>
+              &gt;
+            </button>
+        </div>
       </div>
       {/* Мэдээллийн хэсэг */}
       <div className="card-info">

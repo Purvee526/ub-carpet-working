@@ -23,19 +23,20 @@ const Hero = () => {
         </div>
 
         {/* === БҮХ ТОВЧЛУУРЫГ АГУУЛАХ ГАНЦХАН DIV === */}
-        <div className="hero-buttons-container">
-          {heroButtons.map((buttonInfo, index) => (
-            <button
-              key={index}
-              // Төрлөөс нь хамаарч өөр өөр класс нэр өгнө
-              className={buttonInfo.type === 'sort' ? 'sort-button' : 'brand-button'}
-            >
-              {buttonInfo.text}
-              {/* Хэрэв эрэмбэлэх товчлуур бол сумыг нь нэмж харуулна */}
-              {buttonInfo.type === 'sort' && <span className="sort-arrows">↑↓</span>}
-            </button>
-          ))}
-        </div>
+       <div className="hero-buttons-container">
+        {heroButtons.map((buttonInfo) => (
+          <button
+            key={buttonInfo.text}
+            // БҮХ ТОВЧЛУУРТ НЭГ ИЖИЛ КЛАСС НЭР ӨГНӨ
+            className="brand-button"
+          >
+            {buttonInfo.text}
+            
+            {/* Хэрэв эрэмбэлэх товчлуур (type === 'sort') бол сумыг харуулна */}
+            {buttonInfo.type === 'sort' && <span className="icon">↑↓</span>}
+          </button>
+        ))}
+      </div>
       </div>
     </div>
   );
