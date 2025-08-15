@@ -7,7 +7,9 @@ import { productsData } from '../data'; // <-- data.js-ээс зөв нэрээ�
 const ProductList = () => {
   return (
     // Энд Grid эсвэл Flexbox-оо ашиглаж болно
+    
     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px' }}>
+     
       {productsData.map(product => (
         <ProductCard key={product.id} product={product} />
       ))}

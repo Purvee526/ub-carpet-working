@@ -1,71 +1,117 @@
 import React, { useState } from 'react';
 import './ProductCard.css';
 
-const ChevronLeftIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" className="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
+const ArrowLeftCircle = () => (
+    <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        fill="none" 
+        viewBox="0 0 24 24" 
+        strokeWidth={1.5}
+        stroke="currentColor" 
+        className="icon"
+    >
+        <path 
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" 
+        />
+    </svg>
 );
-const ChevronRightIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" className="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+
+// БАРУУН ТИЙШ ХАРСАН СУМНЫ КОМПОНЕНТ
+const ArrowRightCircle = () => (
+    <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        fill="none" 
+        viewBox="0 0 24 24" 
+        strokeWidth={1.5} // "stroke-width"-г "strokeWidth" болгосон
+        stroke="currentColor" 
+        className="icon" // "class"-г "className" болгоод, "icon" болгосон
+    >
+        <path 
+            strokeLinecap="round" // "stroke-linecap"-г "strokeLinecap" болгосон
+            strokeLinejoin="round" // "stroke-linejoin"-г "strokeLinejoin" болгосон
+            d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" 
+        />
+    </svg>
 );
 
 const ProductCard = ({ product }) => {
-  const [imgIndex, setImgIndex] = useState(0);
+  // Хамгаалалт:
+  if (!product || !product.images || product.images.length === 0) {
+    return <div className="card-container">Мэдээлэл олдсонгүй.</div>;
+  }
 
-  const handlePrev = () => {
-    setImgIndex(prev => prev === 0 ? product.images.length - 1 : prev - 1);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [selectedSize, setSelectedSize] = useState(product.sizes[0]);
+  
+  // Одоо харагдаж буй зургийн мэдээлэл
+  const currentImageInfo = product.images[currentIndex];
+
+  const handlePrev = (e) => {
+    e.stopPropagation();
+    const isFirst = currentIndex === 0;
+    const newIndex = isFirst ? product.images.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
   };
 
-  const handleNext = () => {
-    setImgIndex(prev => prev === product.images.length - 1 ? 0 : prev + 1);
+  const handleNext = (e) => {
+    e.stopPropagation();
+    const isLast = currentIndex === product.images.length - 1;
+    const newIndex = isLast ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
+  
+  // Өнгөний дөрвөлжин дээр дарахад тохирох зургийн индексийг олно
+  const handleColorSelect = (color) => {
+    const newIndex = product.images.findIndex(image => image.color === color);
+    if (newIndex !== -1) {
+        setCurrentIndex(newIndex);
+    }
   };
 
- return (
+  return (
     <div className="card-container">
-      
-      {/* 
-        Зураг болон сумыг агуулсан шинэ "wrapper". 
-        ЭНЭ ХЭСЭГТ ӨӨРЧЛӨЛТ ОРСОН.
-      */}
       <div className="card-image-wrapper">
         <img
-          src={product.images[imgIndex]}
-          alt={product.brand}
+          src={currentImageInfo.src}
+          alt={`${product.brand}`}
           className="card-image"
         />
-        {/* Сумнууд ЗУРАГТАЙГАА хамт нэг "wrapper" дотор байх ёстой */}
         <div className="card-arrows">
-           <button className="arrow-button" onClick={handlePrev}>
-              &lt;
-            </button>
-            <button className="arrow-button" onClick={handleNext}>
-              &gt;
-            </button>
+          <button className="arrow-button" onClick={handlePrev}><ArrowLeftCircle /></button>
+          <button className="arrow-button" onClick={handleNext}><ArrowLeftCircle/></button>
         </div>
       </div>
-      {/* Мэдээллийн хэсэг */}
+      
       <div className="card-info">
         <h3 className="card-brand">{product.brand}</h3>
         <p className="card-details">Код: {product.code} / Төрөл: {product.type}</p>
         
-        {/* Хэмжээний хэсэг */}
         <div className="card-sizes">
           <span className="card-label">Хэмжээ:</span>
           <div className="card-sizes-list">
             {product.sizes.map(size => (
-              <button key={size} className="size-button">{size}</button>
+              <button
+                key={size}
+                className={`size-button ${selectedSize === size ? 'active' : ''}`}
+                onClick={() => setSelectedSize(size)}
+              >
+                {size}
+              </button>
             ))}
           </div>
         </div>
-
-        {/* Өнгөний хэсэг */}
+        
         <div className="card-colors">
           <span className="card-label">Өнгөний сонголт:</span>
           <div className="card-colors-list">
-            {product.colors.map(color => (
-              <span 
-                key={color} 
-                className="color-swatch"
-                style={{ backgroundColor: color }} 
+            {product.colors.map((color) => (
+              <span
+                key={color}
+                className={`color-swatch ${currentImageInfo.color === color ? 'active' : ''}`}
+                style={{ backgroundColor: color }}
+                onClick={() => handleColorSelect(color)}
               ></span>
             ))}
           </div>

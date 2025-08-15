@@ -1,42 +1,57 @@
 // src/data.js
 
-import carpet1 from './assets/ABrgb11.jpg';
-import carpet1_2 from './assets/ABrgb08.jpg';
-import carpet1_3 from './assets/ABrgb07.jpg';
-import carpet2 from './assets/ABrgb10.jpg';
-import carpet2_2 from './assets/ABrgb07.jpg';
-import carpet2_3 from './assets/ABrgb06.jpg';
-import carpet3 from './assets/ABrgb09.jpg';
-import carpet3_2 from './assets/ABrgb05.jpg';
-import carpet3_3 from './assets/ABrgb04.jpg';
+// 1-р хивсний зургууд
+import carpetAB848_1 from './assets/AB848-200x300.jpg';
+import carpetAB848_2 from './assets/AB848-255x350.jpg';
+import carpetAB848_3 from './assets/AB848-255x350r.jpg';
+import carpetAB848_4 from './assets/AB848-255x350t.jpg';
+import carpetAB848_5 from './assets/AB848-300x400.jpg'; 
+import carpetAB848_6 from './assets/AB848-300x400r.jpg';
+import carpetAB848_7 from './assets/AB848-300x400t.jpg'; 
+import carpetAB848_8 from './assets/AB848-300x500.jpg';
+import carpetAB848_9 from './assets/AB848-300x500r.jpg';
+import carpetAB848_10 from './assets/AB848-300x500t.jpg';
 
+// 2-р хивсний зургууд
+import carpetAB2005_1 from './assets/AB2005-2x3.jpg';
+import carpetAB2005_2 from './assets/AB2005-300x400m.jpg';
+import carpetAB2005_3 from './assets/AB2005-300x400sh.jpg';
+import carpetAB2005_4 from './assets/AB2005-300x500m.jpg';
 
 export const productsData = [
   {
     id: 1,
-    images: [carpet1, carpet1_2, carpet1_3],
     brand: 'АЛТАНБУЛАГ ХИВС',
-    code: 'AB748',
-    type: 'Авангард',
-    sizes: ['200x300', '255x350','300x400', '300x500'],
-    colors: ['#216F80', '#000080', '#D9A943', '#C9C6C1'],
+    code: 'AB848',
+    type: 'классик',
+    // "images" жагсаалтыг илүү ухаалаг бүтэцтэй болгосон
+    images: [
+      { src: carpetAB848_1, size: '200x300', color: '#216F80' },
+      { src: carpetAB848_2, size: '255x350', color: '#216F80' },
+      { src: carpetAB848_3, size: '255x350', color: '#000080' },
+      { src: carpetAB848_4, size: '255x350', color: '#D9A943' },
+      { src: carpetAB848_5, size: '300x400', color: '#216F80' },
+      { src: carpetAB848_6, size: '300x400', color: '#000080' },
+      { src: carpetAB848_7, size: '300x400', color: '#D9A943' },
+      { src: carpetAB848_8, size: '300x500', color: '#216F80' },
+      { src: carpetAB848_9, size: '300x500', color: '#000080' },
+      { src: carpetAB848_10, size: '300x500', color: '#D9A943' },
+    ],
+    sizes: ['200x300', '255x350', '300x400', '300x500'],
+    colors: ['#216F80', '#000080', '#D9A943', '#C9C6C1'], // Энд байгаа beige өнгөний (#C9C6C1) зураг дутуу байна
   },
   {
     id: 2,
-    images: [carpet2, carpet2_2, carpet2_3],
-    brand: 'САЯН ХИВС',
-    code: 'SN101',
-    type: 'Модерн',
-    sizes: ['3x4м', '3x5м'],
-    colors: ['#800080', '#0000ff'],
-  },
-  {
-    id: 3,
-    images: [carpet3, carpet3_2, carpet3_3],
-    brand: 'БОГД БРЭНД',
-    code: 'BG202',
-    type: 'Хүүхдийн',
-    sizes: ['1.5x2.3м'],
-    colors: ['#FFC0CB', '#ADD8E6'],
+    brand: 'АЛТАНБУЛАГ ХИВС',
+    code: 'AB2005',
+    type: 'классик',
+    images: [
+      { src: carpetAB2005_1, size: '2x3', color: '#216F80' },
+      { src: carpetAB2005_2, size: '300x400', color: '#000080' },
+      { src: carpetAB2005_3, size: '300x400', color: '#D9A943' },
+      { src: carpetAB2005_4, size: '300x500', color: '#216F80' },
+    ],
+    sizes: ['2x3', '300x400', '300x500'],
+    colors: ['#216F80', '#000080', '#D9A943'],
   },
 ];
