@@ -43,15 +43,15 @@
 }
 
 .arrow-button .icon {
-  width: 60px;
-  color: #0a0a0a; }
+  width: 45px;
+  height: 45px;
+  color: #0a0a0a; 
+  display: block;
+}
+  
 /* ======> ШИНЭ, МИНИМАЛИСТ ТОВЧНЫ ЗАГВАР <====== */
 .arrow-button {
-  background-color: rgba(255, 255, 255, 0.7); /* 70% тунгалаг цагаан */
-  border: 1px solid rgba(0, 0, 0, 0.1); /* 10% тунгалаг хар хүрээ */
   border-radius: 50%;
-  width: 32px;
-  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
