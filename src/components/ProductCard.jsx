@@ -6,8 +6,8 @@ const ArrowLeftCircle = () => (
         xmlns="http://www.w3.org/2000/svg" 
         fill="none" 
         viewBox="0 0 24 24" 
-        strokeWidth={1.5}
-        stroke="currentColor" 
+         strokeWidth={1.5}
+         stroke="currentColor"
         className="icon"
     >
         <path 
@@ -24,8 +24,8 @@ const ArrowRightCircle = () => (
         xmlns="http://www.w3.org/2000/svg" 
         fill="none" 
         viewBox="0 0 24 24" 
-        strokeWidth={1.5} // "stroke-width"-г "strokeWidth" болгосон
-        stroke="currentColor" 
+        strokeWidth={1.5}
+         stroke="currentColor"
         className="icon" // "class"-г "className" болгоод, "icon" болгосон
     >
         <path 
@@ -80,7 +80,7 @@ const ProductCard = ({ product }) => {
         />
         <div className="card-arrows">
           <button className="arrow-button" onClick={handlePrev}><ArrowLeftCircle /></button>
-          <button className="arrow-button" onClick={handleNext}><ArrowLeftCircle/></button>
+          <button className="arrow-button" onClick={handleNext}><ArrowRightCircle/></button>
         </div>
       </div>
       
@@ -95,7 +95,15 @@ const ProductCard = ({ product }) => {
               <button
                 key={size}
                 className={`size-button ${selectedSize === size ? 'active' : ''}`}
-                onClick={() => setSelectedSize(size)}
+                
+                // ======> ЯГ ЭНЭ ХЭСГИЙГ Л ӨӨРЧИЛСӨН <======
+                onClick={() => {
+                  setSelectedSize(size); // Хуучин үйлдэл хэвээрээ
+                  const newIndex = product.images.findIndex(image => image.size === size); // ШИНЭ: Тухайн хэмжээтэй зургийг хайж олох
+                  if (newIndex !== -1) {
+                    setCurrentIndex(newIndex); // ШИНЭ: Олдсон зургийн индексээр зургийг солих
+                  }
+                }}
               >
                 {size}
               </button>

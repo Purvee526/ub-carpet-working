@@ -26,19 +26,19 @@ export const productsData = [
     type: 'классик',
     // "images" жагсаалтыг илүү ухаалаг бүтэцтэй болгосон
     images: [
-      { src: carpetAB848_1, size: '200x300', color: '#216F80' },
-      { src: carpetAB848_2, size: '255x350', color: '#216F80' },
-      { src: carpetAB848_3, size: '255x350', color: '#000080' },
-      { src: carpetAB848_4, size: '255x350', color: '#D9A943' },
-      { src: carpetAB848_5, size: '300x400', color: '#216F80' },
-      { src: carpetAB848_6, size: '300x400', color: '#000080' },
-      { src: carpetAB848_7, size: '300x400', color: '#D9A943' },
-      { src: carpetAB848_8, size: '300x500', color: '#216F80' },
-      { src: carpetAB848_9, size: '300x500', color: '#000080' },
-      { src: carpetAB848_10, size: '300x500', color: '#D9A943' },
+      { src: carpetAB848_1, size: '200x300', color: '#1b7979ff' },
+      { src: carpetAB848_2, size: '255x350', color:'#bcb395ff' },
+      { src: carpetAB848_3, size: '255x350', color: '#bcb395ff' },
+      { src: carpetAB848_4, size: '255x350', color: '#b8b8b8ff'},
+      { src: carpetAB848_5, size: '300x400', color: '#bcb395ff'},
+      { src: carpetAB848_6, size: '300x400', color: '#bcb395ff'},
+      { src: carpetAB848_7, size: '300x400', color: '#bcb395ff'},
+      { src: carpetAB848_8, size: '300x500', color: '#1b7979ff' },
+      { src: carpetAB848_9, size: '300x500', color: '#bcb395ff' },
+      { src: carpetAB848_10, size: '300x500', color: '#1b7979ff'},
     ],
     sizes: ['200x300', '255x350', '300x400', '300x500'],
-    colors: ['#216F80', '#000080', '#D9A943', '#C9C6C1'], // Энд байгаа beige өнгөний (#C9C6C1) зураг дутуу байна
+    colors: ['#1b7979ff','#bcb395ff', '#b8b8b8ff' ], // Энд байгаа beige өнгөний (#C9C6C1) зураг дутуу байна
   },
   {
     id: 2,
