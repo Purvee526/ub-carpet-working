@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 // Хуучин CSS файлууд байвал энд дуудна
 import './App.css'; 
@@ -10,6 +11,7 @@ import FeaturedBrands from './components/FeaturedBrands.jsx';
 import FilterBar from './components/FilterBar.jsx';
 import ProductList from './components/ProductList.jsx';
 import Sidebar from './components/Sidebar.jsx';
+import Footer from './components/Footer.jsx';
 
 import './App.css';
 
@@ -31,6 +33,7 @@ function App() {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
