@@ -1,10 +1,5 @@
 /* src/components/FeaturedBrands.css доторх бүх стил */
 
-.featured-brands-section {
-  text-align: center;
-  border-top: 1px solid #e0e0e0;
-  border-bottom: 1px solid #e0e0e0;
-}
 
 .brands-list {
   display: flex;
@@ -36,20 +31,20 @@
 .ticker-wrap {
   width: 100%;
   overflow: hidden; /* Хальсан контентыг нуух "цонх" */
-  background-color: #f7eddf;
+  background-color: #f2e4ca;
 }
 
 .ticker-move {
   display: flex; /* Текстүүдийг зэрэгцүүлэх */
-  animation: ticker 30s linear infinite;
+  animation: ticker 25s linear infinite;
 }
 
 .ticker-item {
   flex-shrink: 0; /* Агшихаас сэргийлэх */
-  padding: 15px 50px; /* Дээр доор болон хоорондын зай. 50px-г ихэсгэж, багасгаж зайгаа тохируулна */
+  padding: 1px 30px; /* Дээр доор болон хоорондын зай. 50px-г ихэсгэж, багасгаж зайгаа тохируулна */
   white-space: nowrap;
-  font-size: 19px;
-  color: #333;
+  font-size:21px;
+  color: #000000;
 }
 
 @keyframes ticker {

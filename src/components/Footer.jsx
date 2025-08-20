@@ -1,74 +1,75 @@
 // src/components/Footer.jsx
 import React from 'react';
-
 const Footer = () => {
-  return (
-    <div className="border-t-5 border-gray-200">
-      <footer className="bg-white">
-        <div className="max-w-7xl mx-auto py-8 px-4">
-          {/* ======> 4 БАГАНАТАЙ ШИНЭ ЗАГВАР <====== */}
-          <div className="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-20 text-sm text-gray-700">
-            
-            {/* Багана 1: 1-р салбар */}
-            <div className="space-y-2">
-              <h4 className="font-bold text-gray-900 mb-3">1-р салбар</h4>
-              <address className="not-italic">
-                <p>Улаанбаатар хот, ХУД, 19р хороо АПУ компанийн баруун талд, Алтанбулаг хивсний дэлгүүр</p>
-                <p className="mt-2">Өдөр бүр 10:00 - 20:00</p>
-                <p>УТАС: 70142555</p>
-              </address>
-            </div>
+return (
+// Дээд талын нарийн зураас
+<div className="border-t border-gray-200 mt-12">
+<footer className="bg-white">
+<div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+{/* ======> FLEXBOX АШИГЛАСАН ШИНЭ ЗАГВАР <====== */}
+      {/* Гар утас дээр доошоо цуварна, таблетаас дээш зэрэгцэнэ */}
+      <div className="flex flex-col-1 md:flex-row justify-between gap-10 text-sm text-gray-700">
+        
+        {/* ХЭСЭГ 1: Салбаруудын байршил */}
+        <div className="flex-grow"> {/* Энэ хэсэг боломжит бүх зайг эзэлнэ */}
+          <h4 className="font-bold text-gray-900 uppercase tracking-wider mb-4 text-xs">Салбаруудын байршил</h4>
+          
+          {/* Салбаруудыг дотор нь 3 баганатай grid-ээр зохион байгуулна */}
+          <div className="grid grid-cols-3 sm:grid-cols-3 gap-8">
+            {/* 1-р салбар */}
+            <address className="not-italic text-xs leading-relaxed"> {/* line-height нэмсэн */}
+              <p className="font-semibold">1-р салбар:</p>
+              <p>Улаанбаатар хот, ХУД, 19р хороо АПУ компанийн баруун талд, Алтанбулаг хивсний дэлгүүр</p>
+              <p>Өдөр бүр 10:00 - 20:00</p>
+              <p>УТАС: 70142555</p>
+            </address>
 
-            {/* Багана 2: 2-р салбар */}
-            <div className="space-y-2">
-              <h4 className="font-bold text-gray-900 mb-3">2-р салбар</h4>
-              <address className="not-italic">
-                <p>Улаанбаатар хот, БГД, төмөр замын Монголд үйлдвэрлэв худалдааны төв</p>
-                <p className="mt-2">Мя - Ням 10:00 - 19:00 (Даваа - Амарна)</p>
-                <p>Утас: 94390801</p>
-              </address>
-            </div>
+            {/* 2-р салбар */}
+            <address className="not-italic text-xs leading-relaxed">
+              <p className="font-semibold">2-р салбар:</p>
+              <p>Улаанбаатар хот, БГД, төмөр замын Монголд үйлдвэрлэв худалдааны төв</p>
+              <p>Мя - Ням 10:00 - 19:00 (Даваа - Амарна)</p>
+              <p>Утас: 94390801</p>
+            </address>
 
-            {/* Багана 3: 3-р салбар */}
-            <div className="space-y-2">
-              <h4 className="font-bold text-gray-900 mb-3">3-р салбар</h4>
-              <address className="not-italic">
-                <p>Улаанбаатар хот, БЗД, 5-р хороо, Их засаг их сургуулиас зүүн тийш 100м Алтанбулаг хивс нэрийн барааны дэлгүүр</p>
-                <p className="mt-2">Мя - Ням 10:00 - 18:00 (Даваа - Амарна)</p>
-                <p>Утас: 94589894</p>
-              </address>
-            </div>
-
-            {/* Багана 4: Холбоо барих */}
-            <div className="space-y-2">
-              <h4 className="font-bold text-gray-900 uppercase tracking-wider mb-3">Холбоо барих</h4>
-              <p>Утас: 70142556, 70142555</p>
-              <p>И-мэйл: info@ubcarpet.mn</p>
-              <p>Facebook: Улаанбаатар хивс</p>
-              {/* Төлбөрийн картуудын лого */}
-              <div className="mt-5 grid grid-cols-3 gap-2">
-                {/* Хэрэв таны Хаан банкны лого PNG форматтай бол: */}
-                <img src="/image/banks/haan.jpg" alt="Khan Bank" className="h-6 w-auto object-contain" />
-                <img src="/image/banks/has.jpg" alt="Xac Bank" className="h-6 w-auto object-contain" />
-                 <img src="/image/banks/pocet.png" alt="Pocket" className="h-6 w-auto object-contain" />
-                  <img src="/image/banks/simple.png" alt="Simple" className="h-6 w-auto object-contain" />
-                <img src="/image/banks/Spay (1).jpg" alt="StorePay" className="h-6 w-auto object-contain" />
-              </div>
-            </div>
-            
-
-
+            {/* 3-р салбар */}
+            <address className="not-italic text-xs leading-relaxed">
+              <p className="font-semibold">3-р салбар:</p>
+              <p>Улаанбаатар хот, БЗД, 5-р хороо, Их засаг их сургуулиас зүүн тийш 100м Алтанбулаг хивс нэрийн барааны дэлгүүр</p>
+              <p>Мя - Ням 10:00 - 18:00 (Даваа - Амарна)</p>
+              <p>Утас: 94589894</p>
+            </address>
           </div>
         </div>
-      </footer>
-      {/* Хамгийн доод хар хэсэг */}
-      <div className="bg-gray-800">
-        <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-white text-sm">UBCARPET. Бүх эрх хуулиар хамгаалагдсан.</p>
+
+        {/* ХЭСЭГ 2: Холбоо барих */}
+        <div className="flex-shrink-0"> {/* Энэ хэсэг өөртөө хэрэгтэй зайгаа л эзэлнэ */}
+          <h4 className="font-bold text-gray-900 uppercase tracking-wider mb-4 text-xs">Холбоо барих</h4>
+          <div className="space-y-2 text-xs leading-relaxed">
+            <p>Утас: 70142556, 70142555</p>
+            <p>И-мэйл: info@ubcarpet.mn</p>
+            <p>Facebook: Улаанбаатар хивс</p>
+          </div>
+          {/* Төлбөрийн картуудын лого */}
+          <div className="mt-4 grid grid-cols-3 gap-2">
+            <img src="/image/banks/qpay.svg" alt="QPay" className="h-6 object-contain" />
+            <img src="/image/banks/xac.svg" alt="Xac Bank" className="h-6 object-contain" />
+            <img src="/image/banks/storepay.svg" alt="StorePay" className="h-6 object-contain" />
+            <img src="/image/banks/pocket.svg" alt="Pocket" className="h-6 object-contain" />
+            <img src="/image/banks/simple.svg" alt="Simple" className="h-6 object-contain" />
+          </div>
         </div>
+        
       </div>
     </div>
-  );
+  </footer>
+  {/* Хамгийн доод хар хэсэг */}
+  <div className="bg-gray-800">
+    <div className="max-w-7xl mx-auto py-3 px-4 sm:px-6 lg:px-8 text-center">
+      <p className="text-white text-xs">UBCARPET. Бүх эрх хуулиар хамгаалагдсан.</p>
+    </div>
+  </div>
+</div>
+);
 };
-
 export default Footer;
