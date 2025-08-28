@@ -2,9 +2,9 @@
 .hero-section {
   position: relative;
   height: 600px;
-  background-image: url('../assets/image.jpg');
+  background-image: url('../assets/intreir.jpg');
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
