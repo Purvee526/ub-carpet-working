@@ -22,11 +22,11 @@ const Hero = () => {
           <p>ЦЭВЭР ХОНИНЫ НООСОН ХИВС</p>
         </div>
 
+
         {/* === БҮХ ТОВЧЛУУРЫГ АГУУЛАХ ГАНЦХАН DIV === */}
        <div className="hero-buttons-container">
         {heroButtons.map((buttonInfo) => (
-          <button
-            key={buttonInfo.text}
+          <button key={buttonInfo.text}
             // БҮХ ТОВЧЛУУРТ НЭГ ИЖИЛ КЛАСС НЭР ӨГНӨ
             className="brand-button"
           >

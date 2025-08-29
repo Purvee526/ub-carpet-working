@@ -1,89 +1,82 @@
-/* Hero section үндсэн стиль */
+/* src/components/Hero.css (ШИНЭЧИЛСЭН ХУВИЛБАР) */
+
 .hero-section {
   position: relative;
-  height: 600px;
-  background-image: url('../assets/intreir.jpg');
+  width: 100%;
+  min-height: 500px;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/intreir.jpg'); /* Та өөрийнхөө зургийн замаар солиорой */
   background-size: cover;
   background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 80px 0;
   text-align: center;
+  color: white;
 }
 
-/* Фон зураг бүдэгрүүлэх давхарга */
 .hero-section::before {
   content: '';
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
-/* Контент */
-.hero-content {
+/* Энэ хэсэг нь хуучин .container-г орлож байгаа */
+.hero-content, .hero-buttons-container {
   position: relative;
-  z-index: 1;
-  text-align: center;
-  margin: 0 auto;
-  color: #fff;
-  margin-top: 200px;
+  z-index: 2;
+  width: 100%;
+  max-width: 1800px; /* Сайтынхаа үндсэн өргөнтэй тааруулна */
+  margin-top: 300px;
+}
+
+.hero-content {
+  margin-bottom: 80px;
+
 }
 
 .hero-content h1 {
-  font-size: 50px;
-  font-weight: 700;
-  color: #fff;
-  line-height: 1.3;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-  margin: 0 auto;
+  font-size: 48px;
+  font-weight: bold;
 }
 
 .hero-content p {
-  font-size: 30px;
-  color: #fff;
-  margin-top: 10px;
+  font-size: 20px;
 }
 
-/* Товчлууруудын контейнер */
 .hero-buttons-container {
   display: flex;
+  flex-wrap: wrap; /* Энэ хамгийн чухал! */
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-top: 180px;
+  gap: 30px;
 }
 
-/* Товчлуурууд */
-.brand-button,
-.sort-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background-color: rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(221, 221, 221, 0.5);
+.brand-button {
+  padding: 10px 22px;
   border-radius: 8px;
-  padding: 10px 26px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #333;
+  border: none;
+background-color: rgba(152, 151, 151, 0.338); /* Тунгалаг байдлыг багасгасан (0.2 -> 0.15) */
+  color: rgb(255, 255, 255); /* Үсгийг бага зэрэг тунгалаг болгосон */
+  font-size: 16px;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
-  backdrop-filter: blur(2px);
-  text-transform: uppercase;
-}
-.icon {
-  color: #e53935; /* улаан өнгө */
- padding: 0px 10px;
-  font-size: 20px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
 }
 
-.brand-button:hover,
-.sort-button:hover {
-  background-color: #fff;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  
+.brand-button:hover {
+  transform: translateY(-3px); /* Дээшээ 3px хөдөлгөнө */
+}
+
+.brand-button .icon {
+  margin-left: 8px;
+  font-weight: bold;
 }
