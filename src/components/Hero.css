@@ -12,7 +12,7 @@
   align-items: center;
   background-image: url('../assets/intreir.jpg'); /* Та өөрийнхөө зургийн замаар солиорой */
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   text-align: center;
   color: white;
 }
@@ -61,8 +61,8 @@
   padding: 10px 22px;
   border-radius: 8px;
   border: none;
-background-color: rgba(152, 151, 151, 0.338); /* Тунгалаг байдлыг багасгасан (0.2 -> 0.15) */
-  color: rgb(255, 255, 255); /* Үсгийг бага зэрэг тунгалаг болгосон */
+background-color: rgba(255, 255, 255, 0.69); /* Тунгалаг байдлыг багасгасан (0.2 -> 0.15) */
+  color: rgb(39, 38, 38); /* Үсгийг бага зэрэг тунгалаг болгосон */
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -74,9 +74,11 @@ background-color: rgba(152, 151, 151, 0.338); /* Тунгалаг байдлыг
 
 .brand-button:hover {
   transform: translateY(-3px); /* Дээшээ 3px хөдөлгөнө */
+  background-color: #ffffff;
 }
 
 .brand-button .icon {
-  margin-left: 8px;
+  margin-left: 20px;
   font-weight: bold;
+  color: red;
 }
