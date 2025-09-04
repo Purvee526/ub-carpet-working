@@ -3,7 +3,7 @@ import './FeaturedBrands.css';
 
 const FeaturedBrands = () => {
   return (
-<div className="promo-text-container">
+<div className="flex flex-wrap justify-center gap-2 px-4 py-2">
   <div className="ticker-wrap">
     <div className="ticker-move">
       <div className="ticker-item">

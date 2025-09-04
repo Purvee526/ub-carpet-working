@@ -1,14 +1,12 @@
 // src/components/ProductList.jsx
 import React, { useState } from 'react';
 import ProductCard from './ProductCard';
-import ImageModal from './ImageModal'; // ImageModal-г импортлоно
+import ImageModal from './ImageModal';
 import { productsData } from '../data';
 
 const ProductList = () => {
-  // Modal-г удирдах state
   const [modalData, setModalData] = useState(null);
 
-  // ProductCard-аас мэдээлэл ирэхэд Modal-г нээх функц
   const openModal = (product, clickedSrc) => {
     setModalData({
       allImages: product.images,
@@ -16,25 +14,24 @@ const ProductList = () => {
     });
   };
 
-  // Modal-г хаах функц
   const closeModal = () => {
     setModalData(null);
   };
 
   return (
     <>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px' }}>
-        {productsData.map(product => (
-          <ProductCard 
-            key={product.id} 
-            product={product}
-            // "Зураг дээр дарагдвал openModal функцийг дуудаарай" гэж хэлж байна
-            onImageClick={(clickedSrc) => openModal(product, clickedSrc)}
-          />
-        ))}
+      {/* Responsive container болон grid */}
+      <div className="container mx-auto px-2">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+          {productsData.map(product => (
+            <ProductCard
+              key={product.id}
+              product={product}
+              onImageClick={(clickedSrc) => openModal(product, clickedSrc)}
+            />
+          ))}
+        </div>
       </div>
-      
-      {/* Modal-г энд дуудаж, удирдлагыг нь дамжуулна */}
       <ImageModal modalData={modalData} onClose={closeModal} />
     </>
   );
