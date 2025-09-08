@@ -6,12 +6,12 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1px;
   margin-bottom: 30px;
 }
 
 .brand-item img {
-  height: 40px;
+  height: 20px;
   filter: grayscale(100%);
   opacity: 0.6;
   transition: all 0.3s ease;
@@ -19,7 +19,7 @@
 
 .brand-item img:hover {
   filter: grayscale(0%);
-  opacity: 1;
+  opacity: 2;
 }
 
 /* ===== Урсдаг Текстийн Стил Эндээс Эхэлнэ ===== */
@@ -31,7 +31,7 @@
 .ticker-wrap {
   width: 100%;
   overflow: hidden; /* Хальсан контентыг нуух "цонх" */
-  background-color: #f2e4ca;
+  background-color: #faeacc;
 }
 
 .ticker-move {
@@ -41,9 +41,8 @@
 
 .ticker-item {
   flex-shrink: 0; /* Агшихаас сэргийлэх */
-  padding: 1px 30px; /* Дээр доор болон хоорондын зай. 50px-г ихэсгэж, багасгаж зайгаа тохируулна */
   white-space: nowrap;
-  font-size:21px;
+  font-size:16px;
   color: #000000;
 }
 
