@@ -1,11 +1,10 @@
 /* src/components/Header.css */
 
+
 .site-header {
   width: 100%;
-  padding: 5px 0;
+  padding: 3px 0;
   background-color: #ffffff; /* Цагаан дэвсгэр */
-  border-bottom: 1px solid #e0e0e0; /* Доогуур нь зөөлөн зураас */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Зөөлөн сүүдэр */
 }
 
 .site-header .container {
@@ -13,16 +12,17 @@
   margin: 0 auto; 
   margin: 0 20px;
   display: flex;
+  align-items: center; /* Босоо тэнхлэгт голлуулах */
   justify-content: space-between; /* Хоёр тал руу нь шахах */
-  align-items:center; /* Босоо тэнхлэгт голлуулах */
   flex-wrap: wrap;
   object-position: auto;
   
 }
 
 .logo-container .logo {
-  height: 80px;
-  margin-left: 30px;
+  height: 50px;
+  margin: 0 20px 0 0;
+
 }
 
 .actions-container {

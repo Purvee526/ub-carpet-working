@@ -3,9 +3,9 @@
 import React from 'react';
 import './Header.css'; // Header-т зориулсан CSS файл
 
-import logo from "../assets/LOGO 02.png";
-import heartIcon from "../assets/heart.svg";
-import searchIcon from "../assets/search.svg";
+import logo from "../assets/logoqr.jpg";
+// import heartIcon from "../assets/heart.svg";
+// import searchIcon from "../assets/search.svg";
 
 const Header = () => {
   return (
