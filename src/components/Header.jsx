@@ -14,7 +14,7 @@ const Header = () => {
         <div className="logo-container">
           <img src={logo} alt="Компанийн лого" className="logo" />
         </div>
-        <div className="actions-container">
+        {/* <div className="actions-container">
           <div className="search-bar">
             <img src={searchIcon} alt="Хайлт" className="icon" />
             <input type="text" placeholder="Хайх..." />
@@ -25,7 +25,7 @@ const Header = () => {
           <a href="#" className="action-link login-link">
             Login
           </a>
-        </div>
+        </div> */}
       </div>
     </header>
   );

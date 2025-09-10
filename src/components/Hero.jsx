@@ -21,7 +21,8 @@ const Hero = () => {
             ЦЭВЭР ХОНИНЫ НООСОН ХИВС
           </p>
         </div>
-        <div className="flex flex-row flex-wrap items-center justify-center gap-4 sm:gap-4 w-full px-1 mb-0.5 sm:px-0 mt-25">
+        {/* Зэрэгцээ товчнууд: flex-row, gap-4, min-width, text-sm */}
+        <div className="flex flex-row flex-wrap items-center justify-center gap-4 w-full px-1 mb-0.5 sm:px-0 mt-6">
           {heroButtons.map((buttonInfo) => (
             <button
               key={buttonInfo.text}
@@ -30,20 +31,19 @@ const Hero = () => {
                 hover:bg-white 
                 hover:shadow-xl
                 hover:-translate-y-1
-                hover:scale-100
+                hover:scale-105
                 opacity-95
                 text-gray-800 font-medium
                 px-3 py-2 rounded-lg shadow
                 transition-all duration-200
                 flex items-center justify-center 
-                min-w-[100px] sm:min-w-[150px] text-sm 
-                mb-1 sm:mb-0
+                min-w-[150px] text-sm
               "
             >
               {buttonInfo.text}
               {buttonInfo.type === 'sort' && (
                 <span className="ml-2 text-xs text-blue-500 flex items-center">
-                  <svg width="25" height="25" color="red" fill="none" viewBox="0 0 25 25">
+                  <svg width="20" height="20" fill="none" viewBox="0 0 20 20">
                     <path d="M7 14l3 3 3-3" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     <path d="M13 6l-3-3-3 3" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
