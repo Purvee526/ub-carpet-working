@@ -1,14 +1,11 @@
-const translations = {
+export const t = {
   mn: {
     logoAlt: "Компанийн лого",
     searchPlaceholder: "Хайх...",
     saved: "Хадгалсан",
     login: "Нэвтрэх",
     headerTitle: "Хуудасны гарчиг",
-      heroTitle: "Чамин тансаг хивс танд зориулав.",
-    heroButtons: ["Алтанбулаг", "Саян бренд", "Богд бренд"],
-    featuredBrandsText: "Саян, болон Алтан өргөө брэнд хивс 10-20% хямдарлаа.",
-    heroSubtitle: "ЦЭВЭР ХОНИНЫ НООСОН ХИВС",
+    heroTitle: "Чамин тансаг хивс танд зориулав.",
     heroButtons: [
       { text: "АЛТАНБУЛАГ", type: "brand" },
       { text: "САЯН БРЭНД", type: "brand" },
@@ -17,18 +14,17 @@ const translations = {
       { text: "УЛААНБААТАР", type: "brand" },
       { text: "ЗАГВАРЫН ТӨРӨЛ", type: "sort" }
     ],
+    featuredBrandsText: "Саян, болон Алтан өргөө брэнд хивс 10-20% хямдарлаа.",
+    heroSubtitle: "ЦЭВЭР ХОНИНЫ НООСОН ХИВС",
     altanbulag: "АЛТАНБУЛАГ",
     sayanBrand: "САЯН БРЭНД",
     bogdBrand: "БОГД БРЭНД",
     altanUrgoo: "АЛТАНӨРГӨӨ",
     ulaanbaatar: "УЛААНБААТАР",
-    sortBy: "ЗАГВАРЫН ТӨРӨЛ",    
+    sortBy: "ЗАГВАРЫН ТӨРӨЛ",
     filterBarTitle: "ХИВСНИЙ КАТАЛОГИ",
-    filterBarSubtitle: "100% Монгол хонины ноосон хивс",
     code: "Код:",
-    price: "Үнэ:",
-    addToCart: "Сагсанд нэмэх",
-    style: "Төрөл",
+    style: "классик",
     color: "Өнгөний сонголт",
     size: "Хэмжээ",
     material: "Материал",
@@ -45,10 +41,7 @@ const translations = {
     saved: "Saved",
     login: "Login",
     headerTitle: "Page Title",
-     heroTitle: "Luxurious carpets just for you.",
-    heroButtons: ["Altanbulag", "Sayan brand", "Bogd brand"],
-    featuredBrandsText: "Sayan and Altan Urgoo brand carpets are 10-20% off.",
-    heroSubtitle: "PURE WOOL CARPET",
+    heroTitle: "Luxurious carpets just for you.",
     heroButtons: [
       { text: "ALTANBULAG", type: "brand" },
       { text: "SAYAN BRAND", type: "brand" },
@@ -57,18 +50,17 @@ const translations = {
       { text: "ULAANBAATAR", type: "brand" },
       { text: "STYLE TYPE", type: "sort" }
     ],
-    altanbulag: "ALTANBULAG",
-    sayanBrand: "SAYAN BRAND",
-    bogdBrand: "BOGD BRAND",
-    altanUrgoo: "ALTAN URGOO",
-    ulaanbaatar: "ULAANBAATAR",
-    sortBy: "SORT BY",
-    filterBarTitle: "CARPET CATALOG",
-    filterBarSubtitle: "100% Монгол хонины ноосон хивс",
+    featuredBrandsText: "Sayan and Altan Urgoo brand carpets are 10-20% off.",
+    heroSubtitle: "PURE WOOL CARPET",
+    altanbulag: "Altanbulag",
+    sayanBrand: "Sayan Brand",
+    bogdBrand: "Bogd Brand",
+    altanUrgoo: "Altan Urgoo",
+    ulaanbaatar: "Ulaanbaatar",
+    sortBy: "Style Type",
+    filterBarTitle: "Carpet Catalog",
     code: "Code:",
-    price: "Price:",
-    addToCart: "Add to Cart",
-    style: "Style",
+    style: "classic",
     color: "Color",
     size: "Size",
     material: "Material",
@@ -77,10 +69,9 @@ const translations = {
     addressShort: "Branch 2 Ulaanbaatar city, BGD, Mongolian-made trade center 100m east of Ikh Zasag University, Tue - Sun 10:00 - 19:00 (Mon - Closed) Phone: 94390801",
     address2: "Branch 3 Ulaanbaatar city, BZD, Khoroo 5, 100m east of Ikh Zasag University, Altanbulag carpet store, Tue - Sun 10:00 - 18:00 (Mon - Closed) Phone: 94589894",
     contact: "Contact Us",
-    featuredBrandsText: "Sayan and Altan Urgoo brand carpets are 10-20% off.",
-
-    
     // бусад текстүүд...
   },
 };
-export default translations;
+
+// Default export-ыг объектын дараа бичнэ
+export default t;

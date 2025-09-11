@@ -7,7 +7,9 @@
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   display: flex;
   flex-direction: column;
-  
+  min-width: 220px;
+  max-width: 260px;
+  margin: auto;
 }
 
 .card-container:hover {
@@ -23,18 +25,16 @@
   background-color: #f5f5f5;
   padding: 10px;
   box-sizing: border-box;
-  
 }
 
 .card-image {
   display: block;
-  max-width: 100%; /* Зураг эцэг элементийн өргөнөөс хэтрэхгүй */
+  max-width: 100%;
   max-height: 100%;
-  width: auto; /* Жинхэнэ өргөнийг хадгална */
-  height: auto; /* Жинхэнэ өндрийг хадгална */
-  object-fit: contain; /* Зургийн харьцааг алдагдуулахгүйгээр багтаана */
-  box-sizing: border-box;
+  width: auto;
+  height: auto;
   object-fit: contain;
+  box-sizing: border-box;
 }
 
 /* Сумнуудыг агуулсан хүрээ */
@@ -57,59 +57,69 @@
 }
 
 .arrow-button:hover {
-  background-color: rgba(255, 255, 255, 0.6); /* Илүү тод цагаан болно */
+  background-color: rgba(255, 255, 255, 0.6);
   border-color: rgba(0, 0, 0, 0.5);
-  transform: scale(1); /* Бага зэрэг томроно */
+  transform: scale(1);
 }
 
-/* --- Мэдээллийн хэсгийн стилүүд (хэвээрээ) --- */
+/* --- Мэдээллийн хэсгийн стилүүд (desktop шиг) --- */
 .card-info {
   padding: 16px;
   text-align: left;
   flex-grow: 1;
+  font-size: 1rem;
 }
+
 .card-brand {
-  font-size: 10px;
+  font-size: 1rem;
   font-weight: 600;
   color: #000000;
-  margin: 0 0 -3px 0;
+  margin: 0 0 3px 0;
 }
+
 .card-details {
-  font-size: 10px;
+  font-size: 1rem;
   color: #4f4e4e;
   margin: 0 0 12px 0;
 }
+
 .card-sizes, .card-colors {
   margin-top: 10px;
 }
+
 .card-label {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 500;
   color: #555;
   display: block;
   margin-bottom: 6px;
 }
+
 .card-sizes-list,
 .card-colors-list {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  justify-content: center;
 }
+
 .size-button {
-  font-size: 16px;
+  font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  padding: 4px 8px;
+  padding: 6px 12px;
   background-color: #fff;
   cursor: pointer;
   transition: background-color 0.2s;
 }
+
 .size-button:hover {
   background-color: #f0f0f0;
 }
+
 .color-swatch {
-  width: 25px;
-  height: 25px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   border: 2px solid #fff;
   box-shadow: 0 0 0 1px #ddd;

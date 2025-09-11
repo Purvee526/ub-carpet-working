@@ -1,10 +1,9 @@
-// src/components/ProductList.jsx
 import React, { useState } from 'react';
 import ProductCard from './ProductCard';
 import ImageModal from './ImageModal';
 import { productsData } from '../data';
 
-const ProductList = () => {
+const ProductList = ({ products = productsData, t }) => {
   const [modalData, setModalData] = useState(null);
 
   const openModal = (product, clickedSrc) => {
@@ -20,15 +19,15 @@ const ProductList = () => {
 
   return (
     <>
-      {/* Responsive container болон grid */}
-      <div className="container mx-auto px-2">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-          {productsData.map(product => (
-            <ProductCard
-              key={product.id}
-              product={product}
-              onImageClick={(clickedSrc) => openModal(product, clickedSrc)}
-            />
+      <div className="container mx-auto px-2 sm:px-0 my-5 w-full max-w-[1200px]">
+  <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
+    {products.map((product, idx) => (
+      <ProductCard
+        key={idx}
+        product={product}
+        t={t}
+        openModal={openModal}
+      />
           ))}
         </div>
       </div>

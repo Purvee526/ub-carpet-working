@@ -6,29 +6,29 @@ import FilterBar from './components/FilterBar.jsx';
 import ProductList from './components/ProductList.jsx';
 import Sidebar from './components/Sidebar.jsx';
 import Footer from './components/Footer.jsx';
-import translations from "./translations.js";
+import t from './translations.js'; // default export-оор импорт
 
 function App() {
   const [lang, setLang] = useState("mn");
-  const t = translations[lang];
+  const tt = t[lang];
 
   return (
     <div>
-      <Header lang={lang} setLang={setLang} t={t} />
+      <Header lang={lang} setLang={setLang} t={tt} />
       <main>
-        <Hero t={t} />
-        <FeaturedBrands t={t} />
+        <Hero t={tt} />
+        <FeaturedBrands t={tt} />
         <div className="container">
           <div className="catalog-section">
-            <Sidebar t={t} />
+            <Sidebar t={tt} />
             <div className="product-area">
-              <FilterBar t={t} />
-              <ProductList t={t} />
+              <FilterBar t={tt} />
+              <ProductList t={tt} />
             </div>
           </div>
         </div>
       </main>
-      <Footer t={t} />
+      <Footer t={tt} />
     </div>
   );
 }

@@ -3,7 +3,7 @@
 export const productsData = [
   {
     id: 1,
-    brand: 'АЛТАНБУЛАГ ХИВС',
+    brand: "altanbulag",
     code: 'AB848',
     type: 'классик',
     images: [
@@ -22,7 +22,7 @@ export const productsData = [
   },
    {
     id: 2,
-    brand: 'АЛТАНБУЛАГ ХИВС',
+    brand: "altanbulag",
     code: 'AB2005',
     type: 'классик',
     images: [
@@ -39,7 +39,7 @@ export const productsData = [
   }, 
   {
     id: 3,
-    brand: 'АЛТАНБУЛАГ ХИВС',
+    brand: "altanbulag",
     code: 'AB707',
     type: 'классик',
     images: [
@@ -51,7 +51,7 @@ export const productsData = [
   },
    {
     id: 4,
-    brand: 'АЛТАНБУЛАГ ХИВС',
+    brand: "altanbulag",
     code: 'AB749',
     type: 'классик',
     images: [
