@@ -5,8 +5,9 @@ const translations = {
     saved: "Хадгалсан",
     login: "Нэвтрэх",
     headerTitle: "Хуудасны гарчиг",
-    content: "Чамин тансаг хээгээр танд зориулан урлав ЦЭВЭР ХОНИНЫ НООСОН ХИВС",
-    heroTitle: "Чамин тансаг хээгээр танд зориулан урлав.",
+      heroTitle: "Чамин тансаг хивс танд зориулав.",
+    heroButtons: ["Алтанбулаг", "Саян бренд", "Богд бренд"],
+    featuredBrandsText: "Саян, болон Алтан өргөө брэнд хивс 10-20% хямдарлаа.",
     heroSubtitle: "ЦЭВЭР ХОНИНЫ НООСОН ХИВС",
     heroButtons: [
       { text: "АЛТАНБУЛАГ", type: "brand" },
@@ -22,8 +23,8 @@ const translations = {
     altanUrgoo: "АЛТАНӨРГӨӨ",
     ulaanbaatar: "УЛААНБААТАР",
     sortBy: "ЗАГВАРЫН ТӨРӨЛ",    
-    saleBanner: "Саян, болон Алтан өргөө брэнд хивс 10-20% хямдарлаа.",
-    carpetCatalog: "Хивсний каталог",
+    filterBarTitle: "ХИВСНИЙ КАТАЛОГИ",
+    filterBarSubtitle: "100% Монгол хонины ноосон хивс",
     code: "Код:",
     price: "Үнэ:",
     addToCart: "Сагсанд нэмэх",
@@ -44,8 +45,9 @@ const translations = {
     saved: "Saved",
     login: "Login",
     headerTitle: "Page Title",
-    content: "Crafted with exquisite patterns just for you. PURE WOOL CARPETS",
-    heroTitle: "Crafted for you with elegant patterns.",
+     heroTitle: "Luxurious carpets just for you.",
+    heroButtons: ["Altanbulag", "Sayan brand", "Bogd brand"],
+    featuredBrandsText: "Sayan and Altan Urgoo brand carpets are 10-20% off.",
     heroSubtitle: "PURE WOOL CARPET",
     heroButtons: [
       { text: "ALTANBULAG", type: "brand" },
@@ -61,8 +63,8 @@ const translations = {
     altanUrgoo: "ALTAN URGOO",
     ulaanbaatar: "ULAANBAATAR",
     sortBy: "SORT BY",
-    saleBanner: "Sayan and Altan Urgoo brand carpets are now 10-20% off.",
-    carpetCatalog: "Carpet Catalog",
+    filterBarTitle: "CARPET CATALOG",
+    filterBarSubtitle: "100% Монгол хонины ноосон хивс",
     code: "Code:",
     price: "Price:",
     addToCart: "Add to Cart",
@@ -75,6 +77,9 @@ const translations = {
     addressShort: "Branch 2 Ulaanbaatar city, BGD, Mongolian-made trade center 100m east of Ikh Zasag University, Tue - Sun 10:00 - 19:00 (Mon - Closed) Phone: 94390801",
     address2: "Branch 3 Ulaanbaatar city, BZD, Khoroo 5, 100m east of Ikh Zasag University, Altanbulag carpet store, Tue - Sun 10:00 - 18:00 (Mon - Closed) Phone: 94589894",
     contact: "Contact Us",
+    featuredBrandsText: "Sayan and Altan Urgoo brand carpets are 10-20% off.",
+
+    
     // бусад текстүүд...
   },
 };

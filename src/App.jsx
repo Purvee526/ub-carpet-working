@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import LanguageSwitcher from "./components/LanguageSwitcher.jsx";
 import Header from './components/Header.jsx';
 import Hero from './components/Hero.jsx';
 import FeaturedBrands from './components/FeaturedBrands.jsx';
@@ -11,25 +10,25 @@ import translations from "./translations.js";
 
 function App() {
   const [lang, setLang] = useState("mn");
-  
+  const t = translations[lang];
+
   return (
     <div>
-      <LanguageSwitcher lang={lang} setLang={setLang} />
-      <Header lang={lang} setLang={setLang} translations={translations} />
+      <Header lang={lang} setLang={setLang} t={t} />
       <main>
-        <Hero lang={lang} translations={translations} />
-        <FeaturedBrands lang={lang} setLang={setLang} translations={translations} />
+        <Hero t={t} />
+        <FeaturedBrands t={t} />
         <div className="container">
           <div className="catalog-section">
-            <Sidebar lang={lang} setLang={setLang} translations={translations} />
+            <Sidebar t={t} />
             <div className="product-area">
-              <FilterBar lang={lang} setLang={setLang} translations={translations} />
-              <ProductList lang={lang} setLang={setLang} translations={translations} />
+              <FilterBar t={t} />
+              <ProductList t={t} />
             </div>
           </div>
         </div>
       </main>
-      <Footer lang={lang} translations={translations} />
+      <Footer t={t} />
     </div>
   );
 }

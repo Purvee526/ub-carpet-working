@@ -1,16 +1,19 @@
 import React from 'react';
 import './FilterBar.css'; 
 
-const FilterBar = () => {
+const FilterBar = ({ t }) => {
+  // Орчуулгын текстээ props-оор дамжуулж авна
+  const title = t.filterBarTitle || "ХИВСНИЙ КАТАЛОГИ";
+  const subtitle = t.filterBarSubtitle || "";
+
   return (
     <div className="filter-bar">
       <div className="filter-bar-title">
-        <h2>ХИВСНИЙ КАТАЛОГИ</h2>
-        {/* <p>100% Монгол хонины ноосон хивс</p> */}
+        <h2>{title}</h2>
+        {/* <p>{subtitle}</p> */}
       </div>
     </div>
   );
 };
 
-// Хамгийн чухал нь энэ компонентоо экспортлох
 export default FilterBar;
