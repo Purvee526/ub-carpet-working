@@ -1,8 +1,9 @@
 /* src/App.css */
 .container {
-  width: 90%; /* Дэлгэцийн 90%-г эзэлнэ */
-  max-width: 1800px; /* Гэхдээ 1800px-ээс хэтрэхгүй */
+  width: 100%; /* Дэлгэцийн 100%-г эзэлнэ */
+  max-width: 1400px; /* Гэхдээ 1600px-ээс хэтрэхгүй */
   margin-left: auto;
   margin-right: auto;
+   box-sizing: border-box;
   /* padding хэрэггүй болж магадгүй, эсвэл box-sizing-оос хамаарна */
 }

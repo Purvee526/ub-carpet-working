@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import ProductCard from './ProductCard';
 import ImageModal from './ImageModal';
 import { productsData } from '../data';
+import './ProductList.css';
+
 
 const ProductList = ({ products = productsData, t }) => {
   const [modalData, setModalData] = useState(null);
@@ -13,21 +15,20 @@ const ProductList = ({ products = productsData, t }) => {
     });
   };
 
-  const closeModal = () => {
-    setModalData(null);
-  };
+  const closeModal = () => setModalData(null);
 
   return (
     <>
-      <div className="container mx-auto px-2 sm:px-0 my-5 w-full max-w-[1200px]">
-  <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
-    {products.map((product, idx) => (
-      <ProductCard
-        key={idx}
-        product={product}
-        t={t}
-        openModal={openModal}
-      />
+      {/* Container with equal left/right padding and center alignment */}
+      <div className="w-full max-w-[1400px] mx-auto px-8 py-4">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {products.map((product, idx) => (
+            <ProductCard
+              key={product.id}
+              product={product}
+              t={t}
+              openModal={openModal}
+            />
           ))}
         </div>
       </div>

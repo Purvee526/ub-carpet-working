@@ -4,9 +4,11 @@
   display: flex;
   justify-content: center; /* Элементүүдийг 2 тийш нь шахах */
   align-items: center; /* Босоо тэнхлэгт голлуулах */
+  width: 100%;
   padding: 5px 0;
   border-bottom: 1px solid #bbbbbb; /* Доогуур нь зөөлөн зураас */
-  margin-bottom: 30px; /* Доорх бүтээгдэхүүний жагсаалтаас зай авах */
+  margin-bottom:3px; /* Доорх бүтээгдэхүүний жагсаалтаас зай авах */
+  box-sizing: border-box;
 }
 
 .filter-bar-title h2 {
@@ -14,7 +16,7 @@
   font-size: 16px;
   font-weight: 600;
   color: #000000;
-  text-align: left; /* Гарчгийг зүүн талд шахах */
+  text-align: center; /* Гарчгийг төвд шахах */
 }
 
 /* .filter-bar-title p {
