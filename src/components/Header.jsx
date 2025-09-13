@@ -5,12 +5,12 @@ import "./Header.css";
 
 const Header = ({ lang, setLang }) => (
   <header className="site-header">
-    <div className="container">
-      <div className="logo-container">
+    <div className="container mx-auto px-4">
+  <div className="logo-container">
         <img src={logo} alt="Компанийн лого" className="logo" />
       </div>
-      <LanguageSwitcher lang={lang} setLang={setLang} />
-    </div>
+  <LanguageSwitcher lang={lang} setLang={setLang} />
+  </div>
   </header>
 );
 

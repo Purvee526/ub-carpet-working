@@ -1,6 +1,6 @@
 .card-container {
-  margin: 0;
-  padding: 0;
+  margin: 0 12px;
+  padding: 0 4px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -11,10 +11,30 @@
   .card-container {
     max-width: 100%;
     width: 100%;
-    margin: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+    box-sizing: border-box;
   }
 }
+.product-card {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 
+/* Гар утасны хувилбар */
+@media (max-width: 600px) {
+  .product-card {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+}
 .card-container:hover {
   box-shadow: 0 8px 16px #0000001a;
   transform: translateY(-4px);

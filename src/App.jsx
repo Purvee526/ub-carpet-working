@@ -18,12 +18,14 @@ function App() {
       <main>
         <Hero t={tt} />
         <FeaturedBrands t={tt} />
-        <div className="container">
-          <div className="catalog-section">
+        <div className="container mx-auto px-4">
+          <div className="catalog-section" style={{margin: '0 -12px'}}>
             <Sidebar t={tt} />
-            <div className="product-area">
-              <FilterBar t={tt} />
-              <ProductList t={tt} />
+            <div className="product-area px-4">
+              <div className="w-full max-w-[1400px] mx-auto">
+                <FilterBar t={tt} />
+                <ProductList t={tt} />
+              </div>
             </div>
           </div>
         </div>

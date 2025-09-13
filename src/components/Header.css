@@ -22,7 +22,8 @@
 @media (max-width: 600px) {
   .site-header .container {
     gap: 8px;
-    margin: 0 2vw;
+    margin-left: 12px;
+    margin-right: 12px;
   }
   .logo-container .logo {
     height: 22px;
