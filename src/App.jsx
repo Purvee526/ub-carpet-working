@@ -25,12 +25,12 @@ function App() {
               <div className="w-full max-w-[1400px] mx-auto">
                 <FilterBar t={tt} />
                 <ProductList t={tt} />
+                <Footer lang={lang} />
               </div>
             </div>
           </div>
         </div>
       </main>
-      <Footer t={tt} />
     </div>
   );
 }
