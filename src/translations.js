@@ -62,7 +62,7 @@ export const t = {
     bogdBrand: "Bogd Brand",
     altanUrgoo: "Altan Urgoo",
     ulaanbaatar: "Ulaanbaatar",
-    sortBy: "Style Type",
+    sortBy: "Style",
     filterBarTitle: "Carpet Catalog",
     code: "Code:",
     style: "Style",

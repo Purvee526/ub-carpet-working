@@ -1,13 +1,9 @@
 .footer-main {
-  /* default styles here if needed */
-/* End of media queries */
-.footer-grid {
-  /* default styles here if needed */
-}
+
 @media (max-width: 600px) {
   .footer-main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 24px;
     align-items: stretch;
     padding: 18px 16px 20px 16px;
@@ -53,6 +49,8 @@
     padding-top: 12px;
     border-top: 1px solid #eee;
    }
+
+
   .footer-main h4 {
     text-align: left;
     margin-bottom: 8px;
@@ -87,7 +85,7 @@
 
 @media (min-width: 601px) {
   .footer-main {
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
   }
   .footer-grid {

@@ -66,4 +66,53 @@ export const productsData = [
     sizes: ['200x300', '255x350', '300x400', '300x500'],
     colors: ['#b8b8b8ff', '#216F80',],
   },
+
+   {
+    id: 5,
+    brand: "САЯН БРЭНД",
+    code: 'SN714',
+    type: 'АВАНГАРД',
+    images: [
+      { src: '/image/products/SN714/SN714-200x300.jpg', size: '200x300', color: '#FFEBB8' },
+      { src: '/image/products/SN714/SN714-250x350.jpg', size: '250x350', color: '#FFEBB8' },
+    ],
+    sizes: ['200x300', '250x350',],
+    colors: ['#FFEBB8', '#5D9CB3'],
+  },
+
+  {
+    id: 6,
+    brand: "САЯН БРЭНД",
+    code: 'SN622',
+    type: 'АВАНГАРД',
+    images: [
+      { src: '/image/products/SN622/SN622-200x300.jpg', size: '200x300', color: '#FFEBB8' },
+    ],
+    sizes: ['200x300', ],
+    colors: ['#FFEBB8', '#5D9CB3'],
+  },
+
+  {
+    id: 7,
+    brand: "САЯН БРЭНД",
+    code: 'SN737',
+    type: 'АВАНГАРД',
+    images: [
+      { src: '/image/products/SN737-200x300.jpg', size: '200x300', color: '#FFEBB8' },
+    ],
+    sizes: ['200x300', ],
+    colors: ['#FFEBB8', '#5D9CB3'],
+  },
+
+  {
+    id: 8,
+    brand: "САЯН БРЭНД",
+    code: 'SN630',
+    type: 'АВАНГАРД',
+    images: [
+      { src: '/image/products/SN630140-170.jpg', size: '200x300', color: '#FFEBB8' },
+    ],
+    sizes: ['140x170', ],
+    colors: ['#FFEBB8', '#5D9CB3'],
+  },
 ];
