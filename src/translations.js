@@ -7,13 +7,13 @@ export const t = {
     headerTitle: "Хуудасны гарчиг",
     heroTitle: "Чамин тансаг хивс танд зориулав.",
     heroButtons: [
-      { text: "АЛТАНБУЛАГ", type: "brand" },
-      { text: "САЯН БРЭНД", type: "brand" },
-      { text: "БОГД БРЭНД", type: "brand" },
-      { text: "АЛТАНӨРГӨӨ", type: "brand" },
-      { text: "УЛААНБААТАР", type: "brand" },
-      { text: "ЗАГВАРЫН ТӨРӨЛ", type: "sort" }
-    ],
+  { text: "АЛТАНБУЛАГ", key: "altanbulag", type: "brand" },
+  { text: "САЯН БРЭНД", key: "sayan", type: "brand" },
+  { text: "БОГД БРЭНД", key: "bogd", type: "brand" },
+  { text: "АЛТАНӨРГӨӨ", key: "altanUrgoo", type: "brand" },
+  { text: "УЛААНБААТАР", key: "ulaanbaatar", type: "brand" },
+  { text: "ЗАГВАРЫН ТӨРӨЛ", key: "sort", type: "sort" }
+],
     featuredBrandsText: "Саян, болон Алтан өргөө брэнд хивс 10-20% хямдарлаа.",
     heroSubtitle: "ЦЭВЭР ХОНИНЫ НООСОН ХИВС",
     sortBy: "ЗАГВАРЫН ТӨРӨЛ",
@@ -50,13 +50,13 @@ export const t = {
     headerTitle: "Page Title",
     heroTitle: "Luxurious carpets just for you.",
     heroButtons: [
-      { text: "ALTANBULAG", type: "brand" },
-      { text: "SAYAN BRAND", type: "brand" },
-      { text: "BOGD BRAND", type: "brand" },
-      { text: "ALTAN URGOO", type: "brand" },
-      { text: "ULAANBAATAR", type: "brand" },
-      { text: "STYLE TYPE", type: "sort" }
-    ],
+  { text: "АЛТАНБУЛАГ", key: "altanbulag", type: "brand" },
+  { text: "САЯН БРЭНД", key: "sayan", type: "brand" },
+  { text: "БОГД БРЭНД", key: "bogd", type: "brand" },
+  { text: "АЛТАНӨРГӨӨ", key: "altanUrgoo", type: "brand" },
+  { text: "УЛААНБААТАР", key: "ulaanbaatar", type: "brand" },
+  { text: "ЗАГВАРЫН ТӨРӨЛ", key: "sort", type: "sort" }
+],
     featuredBrandsText: "Sayan and Altan Urgoo brand carpets are 10-20% off.",
     heroSubtitle: "PURE WOOL CARPET",
     sortBy: "Style",

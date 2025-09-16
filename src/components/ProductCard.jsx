@@ -68,7 +68,7 @@ const ProductCard = ({ product, t, openModal }) => {
                 className="color-swatch"
                 style={{
                   backgroundColor: color,
-                  border: selectedColor === color ? '2px solid #333' : '2px solid #fff'
+                  border: selectedColor === color ? '1px solid #333' : '2px solid #fff'
                 }}
                 onClick={() => handleColorSelect(color)}
                 title={color}

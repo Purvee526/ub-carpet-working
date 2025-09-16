@@ -4,11 +4,16 @@ import ImageModal from './ImageModal';
 import { productsData } from '../data';
 import './ProductList.css';
 
-const ProductList = ({ products = productsData, t }) => {
+const ProductList = ({ products = productsData, t, selectedBrand }) => {
   const [modalData, setModalData] = useState(null);
 
-  // Brand-аар бүлэглэх
-  const grouped = products.reduce((acc, product) => {
+  // Filter products by selected brand
+  const filteredProducts = selectedBrand
+    ? products.filter(p => p.brand === selectedBrand)
+    : products;
+
+  // Brand-аар бүлэглэх (filteredProducts-оор бүлэглэх нь чухал!)
+  const grouped = filteredProducts.reduce((acc, product) => {
     (acc[product.brand] = acc[product.brand] || []).push(product);
     return acc;
   }, {});
@@ -24,7 +29,6 @@ const ProductList = ({ products = productsData, t }) => {
 
   return (
     <>
-      {/* Container with center alignment */}
       <div className="w-full max-w-[1400px] mx-auto">
         {Object.entries(grouped).map(([brand, brandProducts]) => (
           <section key={brand} style={{ marginBottom: 32 }}>

@@ -47,16 +47,16 @@
   }
   .card-label {
     color: #555 !important;         /* "Хэмжээ" гэсэн текстийн өнгийг өөрчилсөн */
-    font-size: 11px  !important;       /* фонтын хэмжээг томруулсан */
+    font-size: 10px  !important;       /* фонтын хэмжээг томруулсан */
     font-weight: 700 !important;      
   }
   .card-details {
     color: #777777 !important;        /* card details текстийн өнгийг өөрчилсөн */
-    font-size: 12px !important;
+    font-size: 10px !important;
   }
   
   .card-brand {
-    font-size: 12px !important;       /* фонтын хэмжээг томруулсан */
+    font-size: 9px !important;       /* фонтын хэмжээг томруулсан */
     font-weight: 700 !important;      /* фонтын зузааныг нэмэгдүүлсэн */
     color: #333333 !important;        /* өнгийг хар болгосон */
     margin: 0 0 3px 0 !important;
@@ -137,15 +137,15 @@
 }
 
 .card-brand {
-  font-size: 1rem;
+  font-size: 11px;
   font-weight: 600;
-  color: #333333;
+  color: #1b1b1b;
   margin: 0 0 3px 0;
 }
 
 .card-details {
-  font-size: 1rem;
-  color: #4f4e4e;
+  font-size: 0.65rem;
+  color: #6e6e6e;
   margin: 0 0 12px 0;
 }
 
@@ -154,7 +154,7 @@
 }
 
 .card-label {
-  font-size: 1rem;
+  font-size: 11px;
   font-weight: 500;
   color: #555;
   display: block;
@@ -206,4 +206,15 @@
     min-width: 24px;
     text-align: center;
   }
+}
+
+.product-section-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 20px 0 20px 15px; /* Дээд: 32px, Доод: 16px */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+  font-family: 'Arial', sans-serif;
 }

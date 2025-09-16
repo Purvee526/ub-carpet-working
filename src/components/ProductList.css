@@ -15,7 +15,7 @@
 .product-card {
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  box-shadow: 0 2px 8px rgba(139, 30, 30, 0.04);
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@
 }
 
 .product-card-title {
-  font-size: 2rem !important;
+  font-size: 1.1rem;
   font-weight: bold;
   grid-template-columns: 1fr 1fr;
   gap: 10px;

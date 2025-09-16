@@ -3,7 +3,7 @@
 export const productsData = [
   {
     id: 1,
-    brand: "altanbulag",
+    brand: "altanbulag", 
     code: 'AB848',
     type: 'классик',
     images: [
@@ -115,4 +115,105 @@ export const productsData = [
     sizes: ['140x170', ],
     colors: ['#FFEBB8', '#5D9CB3'],
   },
+
+  {
+    id: 9,
+    brand: "altanbulag",
+    code: 'AB856',
+    type: 'классик',
+    images: [
+      { src: '/image/products/AB856/AB856200x300e.jpg', size: '200x300', color: '#bcb395ff' },
+      { src: '/image/products/AB856/AB856200x300hel.jpg', size: '200x300', color: '#D4AC4Eff' },
+      { src: '/image/products/AB856/AB856200x300i.jpg', size: '200x300', color: '#bcb395ff' },
+      { src: '/image/products/AB856/AB856200x300sh.jpg', size: '200x300', color: '#1b7979ff' },
+      { src: '/image/products/AB856/AB856255x350br.jpg', size: '255x350', color: '#bcb395ff' },
+      { src: '/image/products/AB856/AB856255x350hell1.jpg', size: '255x350', color: '#D4AC4Eff' },
+      { src: '/image/products/AB856/AB856300x400bkj.jpg', size: '300x400', color: '#bcb395ff' },
+      { src: '/image/products/AB856/AB856300x400hell2.jpg', size: '300x500', color: '#D4AC4Eff' },
+      { src: '/image/products/AB856/AB856300x500bt.jpg', size: '300x500', color: '#bcb395ff'},
+      { src: '/image/products/AB856/AB856300x500he.jpg', size: '300x500', color: '#D4AC4Eff'},
+     
+    ],
+    sizes: ['200x300', '255x350', '300x400', '300x500'],
+    colors: ['#1b7979ff','#bcb395ff', '#D4AC4Eff'],
+  },
+
+   {
+    id: 10,
+    brand: "altanbulag",
+    code: 'AB26',
+    type: 'классик',
+    images: [
+      { src: '/image/products/AB26/AB26200x300d.jpg', size: '200x300', color: '#bcb395ff' },
+      { src: '/image/products/AB26/AB26300x400r.jpg', size: '255x350', color: '#bcb395ff' },
+      { src: '/image/products/AB26/AB26300x500e.jpg', size: '300x400', color: '#bcb395ff' },
+    ],
+    sizes: ['200x300', '300x400', '300x500'],
+    colors: ['#520616'],
+  },
+
+
+  {
+    id: 11,
+    brand: "bogd",
+    code: 'SN612',
+    type: '[классик]',
+    images: [
+      { src: '/image/products/BG612/BG612200x300.jpg', size: '200x300', color: '#245B69'},
+      { src: '/image/products/BG612/BG61201200x300.jpg', size: '200x300', color: '#02213B'},
+      { src: '/image/products/BG612/BG61202200x300.jpg', size: '250x350', color: '#FFEBB8'},
+    ],
+    sizes: ['200x300', ],
+    colors: ['#FFEBB8', '#245B69', '#02213B'],
+  },
+
+   {
+    id: 12,
+    brand: "bogd",
+    code: 'SN614',
+    type: 'классик',
+    images: [
+      { src: '/image/products/BG614/BG61404200x300.jpg', size: '200x300', color: '#02213B' },
+      { src: '/image/products/BG614/BG61403200x300.jpg', size: '250x350', color: '#245B69' },
+    ],
+    sizes: ['200x300'],
+    colors: ['#245B69', '#02213B'],
+  },
+
+  {
+    id: 13,
+    brand: "bogd",
+    code: 'SN618',
+    type: 'классик',
+    images: [
+      { src: '/image/products/BG618200x300.jpg', size: '200x300', color: '#245B69' },
+    ],
+    sizes: ['200x300'],
+    colors: ['#FFEBB8'],
+  },
+
+    {
+    id: 14,
+    brand: "bogd",
+    code: 'SN619',
+    type: 'классик',
+    images: [
+      { src: '/image/products/BG619200x300.jpg', size: '200x300', color: '#245B69' },
+    ],
+    sizes: ['200x300'],
+    colors: ['#FFEBB8'],
+  },
+
+      {
+    id: 15,
+    brand: "bogd",
+    code: 'SN619',
+    type: 'классик',
+    images: [
+      { src: '/image/products/BG620200x30001.jpg', size: '200x300', color: '#245B69' },
+    ],
+    sizes: ['200x300'],
+    colors: ['#FFEBB8'],
+  },
+
 ];

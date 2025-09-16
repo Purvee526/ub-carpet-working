@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Hero = ({ t }) => {
+const Hero = ({ t, selectedBrand, setSelectedBrand }) => {
   const heroButtons = t.heroButtons || [];
 
   return (
-  <div className="bg-[url('/src/assets/intreir.jpg')] bg-cover bg-bottom bg-no-repeat pt-10 py-0.5" style={{margin: '0', padding: '8px 2px 8px'}}>
-  <div className="container mx-auto px-2 sm:px-0 mb-5 font-inter" style={{maxWidth: '100%', margin: '0 12px'}}>
+    <div className="bg-[url('/src/assets/intreir.jpg')] bg-cover bg-bottom bg-no-repeat pt-10 py-0.5" style={{margin: '0', padding: '8px 2px 8px'}}>
+      <div className="container mx-auto px-2 sm:px-0 mb-5 font-inter" style={{maxWidth: '100%', margin: '0 12px'}}>
         <div className="text-center mt-20 mb-2">
           <h1 className="text-base sm:text-3xl font-bold mb-1 leading-tight text-white drop-shadow">
             {t.heroTitle}
@@ -16,19 +16,28 @@ const Hero = ({ t }) => {
         </div>
         <div className="flex flex-row flex-wrap items-center justify-center gap-4 w-full px-1 mb-1 mt-30">
           {heroButtons.map((btn, i) => (
-            <button key={i} className="
-              bg-gray-100 
-              hover:bg-white 
-              hover:shadow-xl
-              hover:-translate-y-1
-              hover:scale-105
-              opacity-90 hover:opacity-100
-              text-gray-800 font-medium
-              px-3 py-2 rounded-lg shadow
-              transition-all duration-200
-              flex items-center justify-center 
-              min-w-[50px] text-xs sm:text-xs
-            ">
+            <button
+              key={btn.key || i}
+              className={`
+                bg-gray-100 
+                hover:bg-white 
+                hover:shadow-xl
+                hover:-translate-y-1
+                hover:scale-105
+                opacity-90 hover:opacity-100
+                text-gray-800 font-medium
+                px-3 py-2 rounded-lg shadow
+                transition-all duration-200
+                flex items-center justify-center 
+                min-w-[50px] text-xl sm:text-xs
+                ${selectedBrand === btn.key ? ' font-bold' :}
+              `}
+              onClick={() =>
+                btn.type === 'brand'
+                  ? setSelectedBrand(selectedBrand === btn.key ? null : btn.key)
+                  : undefined
+              }
+            >
               {btn.text}
               {btn.type === 'sort' && (
                 <span className="ml-1 text-xs text-blue-500 flex items-center">
