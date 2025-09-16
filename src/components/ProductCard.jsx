@@ -36,18 +36,18 @@ const ProductCard = ({ product, t, openModal }) => {
 
   return (
     <div className="card-container">
-      <div 
+      <div
         className="card-image-wrapper cursor-pointer"
         onClick={() => openModal(product, currentImageInfo.src)}
       >
-        <img src={currentImageInfo.src} alt={t[product.brand] || product.brand} className="card-image" />
+        <img src={currentImageInfo.src} alt={t.brandNames?.[product.brand] || product.brand} className="card-image" />
         <div className="card-arrows">
           <button className="arrow-button" onClick={(e) => handleArrowClick('prev', e)}><ArrowLeftCircle /></button>
-          <button className="arrow-button" onClick={(e) => handleArrowClick('next', e)}><ArrowRightCircle/></button>
+          <button className="arrow-button" onClick={(e) => handleArrowClick('next', e)}><ArrowRightCircle /></button>
         </div>
       </div>
       <div className="card-info">
-        <h3 className="card-brand">{t[product.brand] || product.brand}</h3>
+        <h3 className="card-brand">{t.brandNames?.[product.brand] || product.brand}</h3>
         <p className="card-details">{t.code} {product.code} / {t.style} {product.type}</p>
         <div className="card-sizes">
           <span className="card-label">{t.size}:</span>
@@ -63,7 +63,16 @@ const ProductCard = ({ product, t, openModal }) => {
           <span className="card-label">{t.color}:</span>
           <div className="card-colors-list">
             {product.colors.map((color) => (
-              <span key={color} className={`color-swatch ${selectedColor === color ? 'active' : ''}`} style={{ backgroundColor: color }} onClick={() => handleColorSelect(color)}></span>
+              <span
+                key={color}
+                className="color-swatch"
+                style={{
+                  backgroundColor: color,
+                  border: selectedColor === color ? '2px solid #333' : '2px solid #fff'
+                }}
+                onClick={() => handleColorSelect(color)}
+                title={color}
+              />
             ))}
           </div>
         </div>

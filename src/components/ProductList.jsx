@@ -7,6 +7,12 @@ import './ProductList.css';
 const ProductList = ({ products = productsData, t }) => {
   const [modalData, setModalData] = useState(null);
 
+  // Brand-аар бүлэглэх
+  const grouped = products.reduce((acc, product) => {
+    (acc[product.brand] = acc[product.brand] || []).push(product);
+    return acc;
+  }, {});
+
   const openModal = (product, clickedSrc) => {
     setModalData({
       allImages: product.images,
@@ -20,16 +26,23 @@ const ProductList = ({ products = productsData, t }) => {
     <>
       {/* Container with center alignment */}
       <div className="w-full max-w-[1400px] mx-auto">
-        <div className="product-list">
-          {products.map((product) => (
-            <ProductCard
-              key={product.id}
-              product={product}
-              t={t}
-              openModal={openModal}
-            />
-          ))}
-        </div>
+        {Object.entries(grouped).map(([brand, brandProducts]) => (
+          <section key={brand} style={{ marginBottom: 32 }}>
+            <h2 className="product-section-title">
+              {t.brandNames?.[brand] || brand.toUpperCase()}
+            </h2>
+            <div className="product-list">
+              {brandProducts.map((product) => (
+                <ProductCard
+                  key={product.id}
+                  product={product}
+                  t={t}
+                  openModal={openModal}
+                />
+              ))}
+            </div>
+          </section>
+        ))}
       </div>
       <ImageModal modalData={modalData} onClose={closeModal} />
     </>

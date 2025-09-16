@@ -69,7 +69,7 @@ export const productsData = [
 
    {
     id: 5,
-    brand: "САЯН БРЭНД",
+    brand: "sayan",
     code: 'SN714',
     type: 'АВАНГАРД',
     images: [
@@ -82,7 +82,7 @@ export const productsData = [
 
   {
     id: 6,
-    brand: "САЯН БРЭНД",
+    brand: "sayan",
     code: 'SN622',
     type: 'АВАНГАРД',
     images: [
@@ -94,7 +94,7 @@ export const productsData = [
 
   {
     id: 7,
-    brand: "САЯН БРЭНД",
+    brand: "sayan",
     code: 'SN737',
     type: 'АВАНГАРД',
     images: [
@@ -106,7 +106,7 @@ export const productsData = [
 
   {
     id: 8,
-    brand: "САЯН БРЭНД",
+    brand: "sayan",
     code: 'SN630',
     type: 'АВАНГАРД',
     images: [

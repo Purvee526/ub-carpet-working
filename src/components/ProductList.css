@@ -34,7 +34,7 @@
 }
 
 .product-card-title {
-  font-size: 1.1rem;
+  font-size: 2rem !important;
   font-weight: bold;
   grid-template-columns: 1fr 1fr;
   gap: 10px;

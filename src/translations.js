@@ -16,13 +16,15 @@ export const t = {
     ],
     featuredBrandsText: "Саян, болон Алтан өргөө брэнд хивс 10-20% хямдарлаа.",
     heroSubtitle: "ЦЭВЭР ХОНИНЫ НООСОН ХИВС",
-    altanbulag: "АЛТАНБУЛАГ",
-    sayanBrand: "САЯН БРЭНД",
-    bogdBrand: "БОГД БРЭНД",
-    altanUrgoo: "АЛТАНӨРГӨӨ",
-    ulaanbaatar: "УЛААНБААТАР",
     sortBy: "ЗАГВАРЫН ТӨРӨЛ",
     filterBarTitle: "ХИВСНИЙ КАТАЛОГИ",
+    brandNames: {
+      altanbulag: "АЛТАНБУЛАГ БРЭНД",
+      sayan: "САЯН БРЭНД",
+      bogd: "БОГД БРЭНД",
+      altanUrgoo: "АЛТАНӨРГӨӨ БРЭНД",
+      ulaanbaatar: "УЛААНБААТАР БРЭНД"
+    },
     code: "Код:",
     style: "Загвар",
     color: "Өнгөний сонголт",
@@ -57,13 +59,15 @@ export const t = {
     ],
     featuredBrandsText: "Sayan and Altan Urgoo brand carpets are 10-20% off.",
     heroSubtitle: "PURE WOOL CARPET",
-    altanbulag: "Altanbulag",
-    sayanBrand: "Sayan Brand",
-    bogdBrand: "Bogd Brand",
-    altanUrgoo: "Altan Urgoo",
-    ulaanbaatar: "Ulaanbaatar",
     sortBy: "Style",
     filterBarTitle: "Carpet Catalog",
+    brandNames: {
+      altanbulag: "ALTANBULAG BRAND",
+      sayan: "SAYAN BRAND",
+      bogd: "BOGD BRAND",
+      altanUrgoo: "ALTAN URGOO BRAND",
+      ulaanbaatar: "ULAANBAATAR BRAND"
+    },
     code: "Code:",
     style: "Style",
     type: "classic",
@@ -82,5 +86,4 @@ export const t = {
   },
 };
 
-// Default export-ыг объектын дараа бичнэ
 export default t;
