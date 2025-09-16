@@ -29,8 +29,8 @@ const Hero = ({ t, selectedBrand, setSelectedBrand }) => {
                 px-3 py-2 rounded-lg shadow
                 transition-all duration-200
                 flex items-center justify-center 
-                min-w-[50px] text-xl sm:text-xs
-                ${selectedBrand === btn.key ? ' font-bold' :}
+                min-w-[50px] text-xs sm:text-xs
+                ${selectedBrand === btn.key ? 'ring-2 ring-blue-500 font-bold' : ''}
               `}
               onClick={() =>
                 btn.type === 'brand'
