@@ -12,6 +12,10 @@ const FeaturedBrands = ({ t }) => {
           <div className="ticker-item">{text}</div>
           <div className="ticker-item">{text}</div>
           <div className="ticker-item">{text}</div>
+          <div className="ticker-item">{text}</div>
+          <div className="ticker-item">{text}</div>
+          <div className="ticker-item">{text}</div>
+          <div className="ticker-item">{text}</div>
         </div>
       </div>
     </div>
