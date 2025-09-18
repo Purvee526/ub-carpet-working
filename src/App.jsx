@@ -12,11 +12,15 @@ function App() {
   const [lang, setLang] = useState("mn");
   const tt = t[lang];
 
+  // --- Брэнд сонголтын state нэмнэ ---
+  const [selectedBrand, setSelectedBrand] = useState(null);
+
   return (
     <div>
       <Header lang={lang} setLang={setLang} t={tt} />
       <main>
-        <Hero t={tt} />
+        {/* Сонголтын state-уудыг Hero-д дамжуулна */}
+        <Hero t={tt} selectedBrand={selectedBrand} setSelectedBrand={setSelectedBrand} />
         <FeaturedBrands t={tt} />
         <div className="container mx-auto px-4">
           <div className="catalog-section" style={{margin: '0 -12px'}}>
@@ -24,7 +28,8 @@ function App() {
             <div className="product-area px-4">
               <div className="w-full max-w-[1400px] mx-auto">
                 <FilterBar t={tt} />
-                <ProductList t={tt} />
+                {/* Сонгосон брэндийг дамжуулна */}
+                <ProductList t={tt} selectedBrand={selectedBrand} />
                 <Footer lang={lang} />
               </div>
             </div>
