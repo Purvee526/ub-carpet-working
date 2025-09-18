@@ -1,8 +1,8 @@
 .site-header {
   position: sticky;
   z-index: 100;
-  top: 0;
   width: 100%;
+  top: 0;
   padding: 8px 2px 8px;
   background: #ffffff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04); /* хүсвэл сүүдэр */

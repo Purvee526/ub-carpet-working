@@ -6,10 +6,10 @@ function Footer({ lang = "mn" }) {
 
   return (
     <div className="border-t border-gray-400 mt-12">
-      <footer className="bg-[#f7f7f7]">
+      <footer className="bg-[#f7f7f7] w-full">
         {/* 2 талын зайг desktop дээр тулгаж дүүргэхийн тулд max-w-7xl, mx-auto-г хасаж, w-full ашиглана */}
         <div className="w-full py-4 px-2 lg:px-0">
-          <div className="flex flex-col lg:flex-row-3 gap-4 lg:gap-8 text-sm text-gray-800 items-stretch w-full">
+          <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 text-sm text-gray-800 items-stretch w-full">
             {/* 1-р салбар */}
             <div className="flex-1 min-w-0 px-2">
               <h4 className="font-bold text-gray-900 uppercase tracking-wider mb-2 text-xs">
@@ -58,7 +58,7 @@ function Footer({ lang = "mn" }) {
           </div>
         </div>
       </footer>
-      <div className="bg-gray-800">
+      <div className="bg-gray-800 w-full">
         <div className="w-full py-2 px-2 lg:px-8 text-center">
           <p className="text-white text-xs">UBCARPET. Бүх эрх хуулиар хамгаалагдсан.</p>
         </div>

@@ -50,12 +50,12 @@ export const t = {
     headerTitle: "Page Title",
     heroTitle: "Luxurious carpets just for you.",
     heroButtons: [
-  { text: "АЛТАНБУЛАГ", key: "altanbulag", type: "brand" },
-  { text: "САЯН БРЭНД", key: "sayan", type: "brand" },
-  { text: "БОГД БРЭНД", key: "bogd", type: "brand" },
-  { text: "АЛТАНӨРГӨӨ", key: "altanUrgoo", type: "brand" },
-  { text: "УЛААНБААТАР", key: "ulaanbaatar", type: "brand" },
-  { text: "ЗАГВАРЫН ТӨРӨЛ", key: "sort", type: "sort" }
+  { text: "ALTANBULAG", key: "altanbulag", type: "brand" },
+  { text: "SAYAN BRAND", key: "sayan", type: "brand" },
+  { text: "BOGD BRAND", key: "bogd", type: "brand" },
+  { text: "ALTAN URGOO", key: "altanUrgoo", type: "brand" },
+  { text: "ULAANBAATAR", key: "ulaanbaatar", type: "brand" },
+  { text: "SORT", key: "sort", type: "sort" }
 ],
     featuredBrandsText: "Sayan and Altan Urgoo brand carpets are 10-20% off.",
     heroSubtitle: "PURE WOOL CARPET",
