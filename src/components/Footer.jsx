@@ -7,10 +7,11 @@ function Footer({ lang = "mn" }) {
   return (
     <div className="border-t border-gray-400 mt-12">
       <footer className="bg-[#f7f7f7]">
-        <div className="w-full py-4 px-2 lg:px-8">
-          <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 xl:gap-8 text-sm text-gray-800 items-start">
+        {/* 2 талын зайг desktop дээр тулгаж дүүргэхийн тулд max-w-7xl, mx-auto-г хасаж, w-full ашиглана */}
+        <div className="w-full py-4 px-2 lg:px-0">
+          <div className="flex flex-col lg:flex-row-3 gap-4 lg:gap-8 text-sm text-gray-800 items-stretch w-full">
             {/* 1-р салбар */}
-            <div className="flex-1 min-w-[200px]">
+            <div className="flex-1 min-w-0 px-2">
               <h4 className="font-bold text-gray-900 uppercase tracking-wider mb-2 text-xs">
                 {dict.footerTitle}
               </h4>
@@ -19,19 +20,19 @@ function Footer({ lang = "mn" }) {
               </div>
             </div>
             {/* 2-р салбар */}
-            <div className="flex-1 min-w-[200px]">
+            <div className="flex-1 min-w-0 px-2">
               <div className="not-italic text-xs leading-relaxed text-left">
                 {dict.branch2.split('\n').map((line, i) => <p key={i}>{line}</p>)}
               </div>
             </div>
             {/* 3-р салбар */}
-            <div className="flex-1 min-w-[200px]">
+            <div className="flex-1 min-w-0 px-2">
               <div className="not-italic text-xs leading-relaxed text-left">
                 {dict.branch3.split('\n').map((line, i) => <p key={i}>{line}</p>)}
               </div>
             </div>
             {/* Холбоо барих */}
-            <div className="flex-1 min-w-[200px]">
+            <div className="flex-1 min-w-0 px-2">
               <h4 className="font-bold text-gray-900 uppercase tracking-wider mb-2 text-xs">
                 {dict.contactTitle}
               </h4>
@@ -42,7 +43,7 @@ function Footer({ lang = "mn" }) {
               </div>
             </div>
             {/* Төлбөрийн хэсэг */}
-            <div className="flex-1 min-w-[200px]">
+            <div className="flex-1 min-w-0 px-2">
               <h4 className="font-bold text-gray-900 uppercase tracking-wider mb-2 text-xs">
                 {dict.paymentTitle}
               </h4>
