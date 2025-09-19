@@ -59,7 +59,7 @@ function Footer({ lang = "mn" }) {
         </div>
       </footer>
       <div className="bg-gray-800 w-full">
-        <div className="w-full py-2 px-2 lg:px-8 text-center">
+        <div className="w-full py-2 px-2 lg:px-0 text-center">
           <p className="text-white text-xs">UBCARPET. Бүх эрх хуулиар хамгаалагдсан.</p>
         </div>
       </div>
