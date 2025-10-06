@@ -424,30 +424,57 @@ export const productsData = [
     sizes: [ '200x300','250x350'],
     colors: ['#D4AC4Eff', '#5D9CB3'],
   },
-        {
+   
+         {
     id: 32,
     brand: "sayan",
     code: 'SN346',
-    type: 'классик',
+    type: 'авангард',
     images: [
-      { src: '/image/products/SN346/SN346250x350b.jpg', size: '250x350', color: '#1b7979ff' },
-      { src: '/image/products/SN346/SN346200x300c.jpg', size: '200x300', color: '#5D9CB3' },
+      { src: '/image/products/SN346/SN346-200x300c.jpg', size: '200x300', color: '#1b7979ff' },
+      { src: '/image/products/SN346/SN346-250x350b.jpg', size: '250x350', color: '#1b7979ff' },
     
     ],
     sizes: [ '200x300','250x350'],
     colors: ['#02213B'],
   },
-     {
+       {
     id: 33,
     brand: "sayan",
     code: 'SN415',
     type: 'авангард',
     images: [
-      { src: '/image/products/SN415/SN415-200x300.jpg', size:'200x300', color:'#02213B' },
-      { src: '/image/products/SN415/SN415-250x350.jpg', size:'250x350', color:'#D4AC4Eff' },
+      { src: '/image/products/SN415/SN415-200x300.jpg', size: '200x300', color: '#1b7979ff' },
+      { src: '/image/products/SN415/SN415-250x350.jpg', size: '250x350', color: '#1b7979ff' },
+    
     ],
-    sizes: ['200x300','250x350'],
-    colors: ['#02213B','#D4AC4Eff',],
+    sizes: [ '200x300','250x350'],
+    colors: ['#02213B'],
   },
-
+       {
+    id: 34,
+    brand: "sayan",
+    code: 'SN555',
+    type: 'авангард',
+    images: [
+      { src: '/image/products/SN555/SN555250x350.jpg', size: '250x350', color: '#1b7979ff' },
+      { src: '/image/products/SN555/SN555250x350b.jpg', size: '250x350', color: '#02213B' },
+    
+    ],
+    sizes: [ '250x350'],
+    colors: ['#02213B','#1b7979ff'],
+  },
+        {
+    id: 35,
+    brand: "sayan",
+    code: 'SN103',
+    type: '[классик]',
+    images: [
+      { src: '/image/products/SN103/SN103200x300.jpg', size: '200x300', color: '#02213B' },
+      { src: '/image/products/SN103/SN103200x300r.jpg', size: '200x300', color: '#D4AC4Eff' },
+    
+    ],
+    sizes: [ '200x300'],
+    colors: ['#02213B','#D4AC4Eff'],
+  },
 ]; 
