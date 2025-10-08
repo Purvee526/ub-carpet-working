@@ -4,7 +4,7 @@ const Hero = ({ t, selectedBrand, setSelectedBrand }) => {
   const heroButtons = t.heroButtons || [];
 
   return (
-    <div className="bg-[url('/src/assets/intreir.jpg')] bg-cover bg-bottom bg-no-repeat pt-10 py-0.5" style={{margin: '0', padding: '8px 2px 8px'}}>
+    <div className="bg-[url('/src/assets/intreir1.jpg')] bg-cover bg-bottom bg-no-repeat pt-10 py-0.5" style={{margin: '0', padding: '8px 2px 8px'}}>
       <div className="container mx-auto px-2 sm:px-0 mb-5 font-inter" style={{maxWidth: '100%', margin: '0 12px'}}>
         <div className="text-center mt-20 mb-2">
           <h1 className="text-base sm:text-3xl font-bold mb-1 leading-tight text-white drop-shadow">

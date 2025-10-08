@@ -706,3 +706,4 @@ export const productsData = [
     colors: ['#bcb395ff'],
   },
 ]; 
+
