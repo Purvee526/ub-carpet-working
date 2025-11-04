@@ -36,7 +36,7 @@
 
 .ticker-move {
   display: flex; /* Текстүүдийг зэрэгцүүлэх */
-  animation: ticker 25s linear infinite;
+  animation: ticker 60s linear infinite;
 }
 
 .ticker-item {
@@ -44,6 +44,7 @@
   white-space: nowrap;
   font-size:16px;
   color: #000000;
+  padding-right: 30px;
 }
 
 @keyframes ticker {

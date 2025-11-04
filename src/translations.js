@@ -14,7 +14,7 @@ export const t = {
   { text: "УЛААНБААТАР", key: "ulaanbaatar", type: "brand" },
   { text: "ЗАГВАРЫН ТӨРӨЛ", key: "sort", type: "sort" }
 ],
-    featuredBrandsText: "Саян, болон Алтан өргөө брэнд хивс 10-20% хямдарлаа.",
+    featuredBrandsText: "Саян брэнд хивс 10% хямдарлаа.",
     heroSubtitle: "ЦЭВЭР ХОНИНЫ НООСОН ХИВС",
     sortBy: "ЗАГВАРЫН ТӨРӨЛ",
     filterBarTitle: "ХИВСНИЙ КАТАЛОГИ",
