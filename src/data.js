@@ -705,5 +705,87 @@ export const productsData = [
     sizes: ['255x350'],
     colors: ['#bcb395ff'],
   },
+ {
+    id: 51,
+    brand: "altanbulag",
+    code: 'AB891',
+    type: '[classic]',
+    images: [
+      { src: '/image/products/ab891200x300.jpg', size: '200x300', color: '#216F80' },
+    ],
+    sizes: ['200x300'],
+    colors: ['#bcb395ff'],
+  },
+
+  {
+    id: 52,
+    brand: "altanbulag",
+    code: 'AB892',
+    type: '[classic]',
+    images: [
+      { src: '/image/products/ab892200x300.jpg', size: '200x300', color: '#216F80' },
+    ],
+    sizes: ['200x300'],
+    colors: ['#bcb395ff'],
+  },
+
+   {
+    id: 53,
+    brand: "altanbulag",
+    code: 'AB906',
+    type: '[classic]',
+    images: [
+      { src: '/image/products/ab906255x350.jpg', size: '200x300', color: '#216F80' },
+    ],
+    sizes: ['200x300'],
+    colors: ['#bcb395ff'],
+  },
+   {
+    id: 54,
+    brand: "altanbulag",
+    code: 'AB644',
+    type: '[classic]',
+    images: [
+      { src: '/image/products/AB6442x30.jpg', size: '200x300', color: '#216F80' },
+      { src: '/image/products/AB6442x300.jpg', size: '200x300', color: '#216F80' },
+    ],
+    sizes: ['200x300'],
+    colors: ['#bcb395ff'],
+  },
+ {
+    id: 55,
+    brand: "altanbulag",
+    code: 'AB908',
+    type: '[classic]',
+    images: [
+      { src: '/image/products/ab908255x350.jpg', size: '200x300', color: '#216F80' },
+    ],
+    sizes: ['200x300'],
+    colors: ['#bcb395ff'],
+  },
+
+  {
+    id: 56,
+    brand: "altanbulag",
+    code: 'AB881',
+    type: '[classic]',
+    images: [
+      { src: '/image/products/ab881255x350.jpg', size: '255x350', color: '#216F80' },
+    ],
+    sizes: ['255x350'],
+    colors: ['#bcb395ff'],
+  },
+   {
+    id: 57,
+    brand: "altanbulag",
+    code: 'AB706',
+    type: '[classic]',
+    images: [
+      { src: '/image/products/AB706/ab706255x350.jpg', size: '255x350', color: '#02213B' },
+      { src: '/image/products/AB706/ab706300x400.jpg', size: '300x400', color: '#02213B'},
+    ],
+    sizes: ['255x350', '300x400'],
+    colors: ['#02213B','#216F80'],
+  },
 ]; 
 
