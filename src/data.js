@@ -637,7 +637,7 @@ export const productsData = [
     sizes: ['200x300', '250x350'],
     colors: ['#FFFEED'],
   },
-   {
+  {
     id: 46,
     brand: "bogd",
     code: 'bg309',
@@ -677,7 +677,7 @@ export const productsData = [
       { src: '/image/products/AB773/AB773200x300shi.jpg', size: '200x300', color: '#216F80' },
     ],
     sizes: ['200x300'],
-    colors: ['#02213B','#216F80'],
+    colors: ['#02213B', '#216F80'],
   },
   {
     id: 49,
@@ -690,11 +690,11 @@ export const productsData = [
       { src: '/image/products/AB759/AB759300x400.jpg', size: '300x400', color: '#216F80' },
       { src: '/image/products/AB759/AB759300x500.jpg', size: '300x500', color: '#216F80' },
     ],
-    sizes: ['200x300','255x350','300x400','300x500'],
+    sizes: ['200x300', '255x350', '300x400', '300x500'],
     colors: ['#216F80'],
   },
 
-    {
+  {
     id: 50,
     brand: "altanbulag",
     code: 'AB948',
@@ -705,7 +705,7 @@ export const productsData = [
     sizes: ['255x350'],
     colors: ['#bcb395ff'],
   },
- {
+  {
     id: 51,
     brand: "altanbulag",
     code: 'AB891',
@@ -729,7 +729,7 @@ export const productsData = [
     colors: ['#bcb395ff'],
   },
 
-   {
+  {
     id: 53,
     brand: "altanbulag",
     code: 'AB906',
@@ -740,7 +740,7 @@ export const productsData = [
     sizes: ['200x300'],
     colors: ['#bcb395ff'],
   },
-   {
+  {
     id: 54,
     brand: "altanbulag",
     code: 'AB644',
@@ -752,7 +752,7 @@ export const productsData = [
     sizes: ['200x300'],
     colors: ['#bcb395ff'],
   },
- {
+  {
     id: 55,
     brand: "altanbulag",
     code: 'AB908',
@@ -775,17 +775,57 @@ export const productsData = [
     sizes: ['255x350'],
     colors: ['#bcb395ff'],
   },
-   {
+  {
     id: 57,
     brand: "altanbulag",
     code: 'AB706',
-    type: '[classic]',
+    type: 'classic',
     images: [
       { src: '/image/products/AB706/ab706255x350.jpg', size: '255x350', color: '#02213B' },
-      { src: '/image/products/AB706/ab706300x400.jpg', size: '300x400', color: '#02213B'},
+      { src: '/image/products/AB706/ab706300x400.jpg', size: '300x400', color: '#02213B' },
     ],
     sizes: ['255x350', '300x400'],
-    colors: ['#02213B','#216F80'],
+    colors: ['#02213B', '#216F80'],
   },
-]; 
+  {
+    id: 58,
+    brand: "altanbulag",
+    code: 'AB210',
+    type: '[classic]',
+    images: [
+      { src: '/image/products/AB210/AB2102x3.jpg', size: '200x300', color: '#D4AC4Eff' },
+      { src: '/image/products/AB210/AB210200x220.jpg', size: '200x220', color: '#D4AC4Eff' },
+      { src: '/image/products/AB210/210250x350.jpg', size: '250x350', color: '#D4AC4Eff' },
+      { src: '/image/products/AB210/210300x400.jpg', size: '300x400', color: '#D4AC4Eff' },
+      { src: '/image/products/AB210/AB210y3x5.jpg', size: '300x500', color: '#D4AC4Eff' },
+    ],
+    sizes: ['200x300', '200x220', '250x350', '300x400', '300x500'],
+    colors: ['#D4AC4Eff'],
+  },
+  {
+    id: 59,
+    brand: "altanbulag",
+    code: 'AB925',
+    type: '[classic]',
+    images: [
+      { src: '/image/products/AB925/AB925255x350.jpg', size: '200x300', color: '#bcb395ff' },
+      { src: '/image/products/AB925/AB925255x3500.jpg', size: '200x220', color: '#216F80' },
+    ],
+    sizes: [ '255x350'],
+    colors: ['#bcb395ff','#216F80'],
+  },
+   {
+    id: 60,
+    brand: "altanbulag",
+    code: 'AB666',
+    type: '[classic]',
+    images: [
+      { src: '/image/products/AB666/AB6662x3.jpg', size: '200x300', color: '#216F80' },
+      { src: '/image/products/AB666/AB666300x400.jpg', size: '200x220', color: '#D4AC4Eff'},
+    ],
+    sizes: [ '255x350'],
+    colors: ['#D4AC4Eff','#216F80'],
+  },
+
+];
 
