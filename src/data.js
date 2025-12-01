@@ -48,6 +48,18 @@ export const productsData = [
     sizes: ['300x400',],
     colors: ['#02213B', '#b8b8b8ff'],
   },
+    {
+    id: 82,
+    brand: "altanbulag",
+    code: 'SN748',
+    type: '[классик]',
+    images: [
+      { src: '/image/products/AB748/748200x300.jpg', size: '200x300', color: '#5D9CBC' },
+      { src: '/image/products/AB748/ab748300x500.jpg', size: '300x500', color: '#5D9CBC' },
+    ],
+    sizes: ['200x300', '300x500'],
+    colors: ['#216F80',],
+  },
   {
     id: 4,
     brand: "altanbulag",
@@ -241,13 +253,14 @@ export const productsData = [
     code: 'AB846',
     type: 'классик',
     images: [
+      { src: '/image/products/ab846/ab846255x350.jpg', size: '255x350', color: '#bcb395ff' },
       { src: '/image/products/ab846/ab846255x350ch.jpg', size: '255x350', color: '#b8b8b8ff' },
       { src: '/image/products/ab846/ab846300x400beij.jpg', size: '300x400', color: '#bcb395ff' },
       { src: '/image/products/ab846/ab846300x400srl.jpg', size: '300x400', color: '#b8b8b8ff' },
       { src: '/image/products/ab846/ab846300x500bg.jpg', size: '300x500', color: '#bcb395ff' },
       { src: '/image/products/ab846/ab846300x500srl.jpg', size: '300x500', color: '#b8b8b8ff' },
     ],
-    sizes: ['200x300', '255x350', '300x400', '300x500'],
+    sizes: ['255x350', '300x400', '300x500'],
     colors: ['#bcb395ff', '#b8b8b8ff'],
   },
   {
@@ -344,7 +357,7 @@ export const productsData = [
       { src: '/image/products/SN434/sn434200x3001.webp', size: '250x350', color: '#02213B' },
     ],
     sizes: ['250x350', '200x300'],
-    colors: ['#D4AC4Eff', '#5D9CB3','#02213B'],
+    colors: ['#D4AC4Eff', '#5D9CB3', '#02213B'],
   },
 
   {
@@ -614,7 +627,7 @@ export const productsData = [
       { src: '/image/products/SN226/sn266250x350ts.jpg', size: '100x200', color: '#5D9CBC' },
     ],
     sizes: ['200x300', '250x350'],
-    colors: [ '#02213B', '#520616', '#5D9CBC','#216F80'],
+    colors: ['#02213B', '#520616', '#5D9CBC', '#216F80'],
   },
 
   {
@@ -823,9 +836,9 @@ export const productsData = [
     type: '[classic]',
     images: [
       { src: '/image/products/AB666/AB6662x3.jpg', size: '200x300', color: '#216F80' },
-      { src: '/image/products/AB666/AB666300x400.jpg', size: '200x220', color: '#D4AC4Eff' },
+      { src: '/image/products/AB666/AB666300x400.jpg', size: '255x350', color: '#D4AC4Eff' },
     ],
-    sizes: ['255x350'],
+    sizes: ['200x300','255x350'],
     colors: ['#D4AC4Eff', '#216F80'],
   },
   {
@@ -867,7 +880,7 @@ export const productsData = [
       { src: '/image/products/SN762/sn762200x3003.webp', size: '200x300', color: '#b8b8b8ff' },
     ],
     sizes: ['200x300'],
-    colors: ['#FFEBB8', '#D4AC4Eff' , '#b8b8b8ff'],
+    colors: ['#FFEBB8', '#D4AC4Eff', '#b8b8b8ff'],
   },
   {
     id: 64,
@@ -878,10 +891,10 @@ export const productsData = [
       { src: '/image/products/SN763/sn763200x300.webp', size: '200x300', color: '#b8b8b8ff' },
       { src: '/image/products/SN763/sn763200x3001.webp', size: '200x300', color: '#b8b8b8ff' },
       { src: '/image/products/SN763/sn763200x3002.webp', size: '200x300', color: '#D4AC4Eff' },
-    
+
     ],
     sizes: ['200x300'],
-    colors: ['#D4AC4Eff' , '#b8b8b8ff'],
+    colors: ['#D4AC4Eff', '#b8b8b8ff'],
   },
   {
     id: 65,
@@ -894,10 +907,10 @@ export const productsData = [
       { src: '/image/products/SN764/sn764200x3002.webp', size: '200x300', color: '#D4AC4Eff' },
       { src: '/image/products/SN764/sn764200x3004.webp', size: '200x300', color: '#D4AC4Eff' },
 
-    
+
     ],
     sizes: ['200x300'],
-    colors: ['#D4AC4Eff' , '#b8b8b8ff'],
+    colors: ['#D4AC4Eff', '#b8b8b8ff'],
   },
   {
     id: 66,
@@ -908,12 +921,12 @@ export const productsData = [
       { src: '/image/products/SN768/sn768200x3001.webp', size: '200x300', color: '#b8b8b8ff' },
       { src: '/image/products/SN768/sn768200x3002.webp', size: '200x300', color: '#b8b8b8ff' },
       { src: '/image/products/SN768/sn768200x3003.webp', size: '200x300', color: '#D4AC4Eff' },
-      { src: '/image/products/SN768/sn768200x3004.webp', size: '200x300', color: '#FFEBB8'},
+      { src: '/image/products/SN768/sn768200x3004.webp', size: '200x300', color: '#FFEBB8' },
 
-    
+
     ],
     sizes: ['200x300'],
-    colors: ['#FFEBB8','#D4AC4Eff' , '#b8b8b8ff'],
+    colors: ['#FFEBB8', '#D4AC4Eff', '#b8b8b8ff'],
   },
   {
     id: 68,
@@ -948,136 +961,149 @@ export const productsData = [
       { src: '/image/products/SN435/sn435200x3003.webp', size: '200x300', color: '#D4AC4Eff' },
     ],
     sizes: ['200x300'],
-    colors: ['#FFEBB8','#D4AC4Eff', '#5D9CB3'],
+    colors: ['#FFEBB8', '#D4AC4Eff', '#5D9CB3'],
   },
-    {
+  {
     id: 70,
     brand: "sayan",
     code: 'SN653',
     type: '[классик]',
     images: [
-      { src: '/image/products/SN653/SN653200x300.webp', size: '200x300', color: '#216F80'},
+      { src: '/image/products/SN653/SN653200x300.webp', size: '200x300', color: '#216F80' },
       { src: '/image/products/SN653/SN653250x350.webp', size: '200x300', color: '#D4AC4Eff' },
     ],
     sizes: ['200x300'],
     colors: ['#D4AC4Eff', '#4A6628'],
   },
-   {
+  {
     id: 71,
     brand: "sayan",
     code: 'SN310',
     type: '[классик]',
     images: [
-      { src: '/image/products/SN310/sn310300x400.jpg', size: '300x400', color: '#5D9CBC'},
+      { src: '/image/products/SN310/sn310300x400.jpg', size: '300x400', color: '#5D9CBC' },
       { src: '/image/products/SN310/snn310300x400.jpg', size: '300x400', color: '#216F80' },
     ],
     sizes: ['300x400'],
-    colors: ['#5D9CBC','#216F80'],
+    colors: ['#5D9CBC', '#216F80'],
   },
-   {
+  {
     id: 72,
     brand: "sayan",
     code: 'SN326',
     type: '[классик]',
     images: [
-      { src: '/image/products/sn336200x300 .jpg', size: '200x300', color: '#5D9CBC'},
+      { src: '/image/products/sn336200x300 .jpg', size: '200x300', color: '#5D9CBC' },
     ],
     sizes: ['200x300'],
     colors: ['#216F80'],
   },
-   {
+  {
     id: 73,
     brand: "sayan",
     code: 'SN338',
     type: '[классик]',
     images: [
-      { src: '/image/products/sn338200x300.jpg', size: '200x300', color: '#5D9CBC'},
+      { src: '/image/products/sn338200x300.jpg', size: '200x300', color: '#5D9CBC' },
 
     ],
     sizes: ['200x300'],
     colors: ['#216F80'],
   },
-   {
+  {
     id: 74,
     brand: "sayan",
     code: 'SN339',
     type: '[классик]',
     images: [
-      { src: '/image/products/sn339200x300 .jpg', size: '200x300', color: '#5D9CBC'},
+      { src: '/image/products/sn339200x300 .jpg', size: '200x300', color: '#5D9CBC' },
     ],
     sizes: ['200x300'],
-     colors: ['#FFEBB8'],
+    colors: ['#FFEBB8'],
   },
-   {
+  {
     id: 75,
     brand: "sayan",
     code: 'SN356',
     type: '[классик]',
     images: [
-      { src: '/image/products/sn357200x300.jpg', size: '200x300', color: '#5D9CBC'},
+      { src: '/image/products/sn357200x300.jpg', size: '200x300', color: '#5D9CBC' },
     ],
     sizes: ['200x300',],
-     colors: ['#D4AC4Eff'],
+    colors: ['#D4AC4Eff'],
   },
-    {
+  {
     id: 76,
     brand: "sayan",
     code: 'SN440',
     type: '[классик]',
     images: [
-      { src: '/image/products/sn440200x300.jpg', size: '200x300', color: '#5D9CBC'},
+      { src: '/image/products/sn440200x300.jpg', size: '200x300', color: '#5D9CBC' },
     ],
     sizes: ['200x300',],
-     colors: ['#D4AC4Eff'],
+    colors: ['#D4AC4Eff'],
   },
-    {
+  {
     id: 77,
     brand: "sayan",
     code: 'SN442',
     type: '[классик]',
     images: [
-      { src: '/image/products/sn442200x300.jpg', size: '200x300', color: '#5D9CBC'},
+      { src: '/image/products/sn442200x300.jpg', size: '200x300', color: '#5D9CBC' },
     ],
     sizes: ['200x300',],
-     colors: ['#D4AC4Eff'],
+    colors: ['#D4AC4Eff'],
   },
-     {
+  {
     id: 78,
     brand: "sayan",
     code: 'SN444',
     type: '[классик]',
     images: [
-      { src: '/image/products/SN444/sn444200x300.jpg', size: '200x300', color: '#5D9CBC'},
-      { src: '/image/products/SN444/snn444200x300.jpg', size: '200x300', color: '#FFEBB8'},
+      { src: '/image/products/SN444/sn444200x300.jpg', size: '200x300', color: '#5D9CBC' },
+      { src: '/image/products/SN444/snn444200x300.jpg', size: '200x300', color: '#FFEBB8' },
     ],
     sizes: ['200x300',],
-     colors: ['#D4AC4Eff','#FFEBB8'],
+    colors: ['#D4AC4Eff', '#FFEBB8'],
   },
-      {
+  {
     id: 79,
     brand: "sayan",
     code: 'SN542',
     type: '[классик]',
     images: [
-      { src: '/image/products/sn542200x300.jpg', size: '200x300', color: '#5D9CBC'},
+      { src: '/image/products/sn542200x300.jpg', size: '200x300', color: '#5D9CBC' },
     ],
     sizes: ['200x300',],
-     colors: ['#D4AC4Eff',],
+    colors: ['#D4AC4Eff',],
   },
-       {
+  {
     id: 80,
     brand: "sayan",
     code: 'SN610',
     type: '[классик]',
     images: [
-      { src: '/image/products/SN610/sn610250x350.jpg', size: '200x300', color: '#5D9CBC'},
-      { src: '/image/products/SN610/sn610250x350sho.jpg', size: '200x300', color: '#FFEBB8'},
+      { src: '/image/products/SN610/sn610250x350.jpg', size: '200x300', color: '#5D9CBC' },
+      { src: '/image/products/SN610/sn610250x350sho.jpg', size: '200x300', color: '#FFEBB8' },
     ],
     sizes: ['200x300',],
-     colors: ['#216F80','#FFEBB8'],
+    colors: ['#216F80', '#FFEBB8'],
+  },
+  {
+    id: 81,
+    brand: "sayan",
+    code: 'SN702',
+    type: '[классик]',
+    images: [
+      { src: '/image/products/sn704300x400.jpg', size: '200x300', color: '#5D9CBC' },
+    ],
+    sizes: ['200x300',],
+    colors: ['#216F80', '#FFEBB8'],
   },
 
-
+ 
 ];
+
+
 
 
