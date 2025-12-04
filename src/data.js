@@ -282,55 +282,55 @@ export const productsData = [
     sizes: ['200x300', '255x350', '300x400', '300x500'],
     colors: ['#520616', '#b8b8b8ff', '#1b7979ff'],
   },
-  {
-    id: 20,
-    brand: "ulaanbaatar",
-    code: 'UB1017',
-    type: 'классик',
-    images: [
-      { src: '/image/products/ub1017300x400.jpg', size: '300x400', color: '#245B69' },
-    ],
-    sizes: ['300x400'],
-    colors: ['#245B69'],
-  },
-  {
-    id: 21,
-    brand: "ulaanbaatar",
-    code: 'UB1004',
-    type: 'классик',
-    images: [
-      { src: '/image/products/UB1004300x400.jpg', size: '300x400', color: '#245B69' },
-    ],
-    sizes: ['300x400'],
-    colors: ['#520616'],
-  },
-  {
-    id: 22,
-    brand: "ulaanbaatar",
-    code: 'UB2005',
-    type: 'классик',
-    images: [
-      { src: '/image/products/ub2005/UB2005shifr300x500.jpg', size: '300x500', color: '#245B69' },
-      { src: '/image/products/ub2005/ub1002100x200.jpg', size: '100x200', color: '#245B69' },
-      { src: '/image/products/ub2005/ub2005100x200shpr.jpg', size: '100x200', color: '#245B69' },
-      { src: '/image/products/ub2005/ub2005200x300shipr.jpg', size: '200x300', color: '#245B69' },
-    ],
-    sizes: ['300x500', '100x200', '200x300'],
-    colors: ['#245B69'],
-  },
-  {
-    id: 23,
-    brand: "ulaanbaatar",
-    code: 'UB1002',
-    type: 'классик',
-    images: [
-      { src: '/image/products/ub1002/ub1002-200x300.jpg', size: '100x200', color: '#245B69' },
-      { src: '/image/products/ub1002/ub1002red200x300.jpg', size: '100x200', color: '#520616' },
-      { src: '/image/products/ub1002/ub1002200x300.jpg', size: '200x300', color: '#02213B' },
-    ],
-    sizes: ['200x300'],
-    colors: ['#245B69', '#520616', '#02213B'],
-  },
+  // {
+  //   id: 20,
+  //   brand: "ulaanbaatar",
+  //   code: 'UB1017',
+  //   type: 'классик',
+  //   images: [
+  //     { src: '/image/products/ub1017300x400.jpg', size: '300x400', color: '#245B69' },
+  //   ],
+  //   sizes: ['300x400'],
+  //   colors: ['#245B69'],
+  // },
+  // {
+  //   id: 21,
+  //   brand: "ulaanbaatar",
+  //   code: 'UB1004',
+  //   type: 'классик',
+  //   images: [
+  //     { src: '/image/products/UB1004300x400.jpg', size: '300x400', color: '#245B69' },
+  //   ],
+  //   sizes: ['300x400'],
+  //   colors: ['#520616'],
+  // },
+  // {
+  //   id: 22,
+  //   brand: "ulaanbaatar",
+  //   code: 'UB2005',
+  //   type: 'классик',
+  //   images: [
+  //     { src: '/image/products/ub2005/UB2005shifr300x500.jpg', size: '300x500', color: '#245B69' },
+  //     { src: '/image/products/ub2005/ub1002100x200.jpg', size: '100x200', color: '#245B69' },
+  //     { src: '/image/products/ub2005/ub2005100x200shpr.jpg', size: '100x200', color: '#245B69' },
+  //     { src: '/image/products/ub2005/ub2005200x300shipr.jpg', size: '200x300', color: '#245B69' },
+  //   ],
+  //   sizes: ['300x500', '100x200', '200x300'],
+  //   colors: ['#245B69'],
+  // },
+  // {
+  //   id: 23,
+  //   brand: "ulaanbaatar",
+  //   code: 'UB1002',
+  //   type: 'классик',
+  //   images: [
+  //     { src: '/image/products/ub1002/ub1002-200x300.jpg', size: '100x200', color: '#245B69' },
+  //     { src: '/image/products/ub1002/ub1002red200x300.jpg', size: '100x200', color: '#520616' },
+  //     { src: '/image/products/ub1002/ub1002200x300.jpg', size: '200x300', color: '#02213B' },
+  //   ],
+  //   sizes: ['200x300'],
+  //   colors: ['#245B69', '#520616', '#02213B'],
+  // },
 
   {
     id: 24,
@@ -641,17 +641,17 @@ export const productsData = [
     sizes: ['200x300', '250x350'],
     colors: ['#D4AC4Eff'],
   },
-  {
-    id: 45,
-    brand: "ulaanbaatar",
-    code: 'ub1026',
-    type: '[classic]',
-    images: [
-      { src: '/image/products/UB1026200x300.jpg', size: '200x300', color: '#D4AC4Eff' },
-    ],
-    sizes: ['200x300', '250x350'],
-    colors: ['#FFFEED'],
-  },
+  // {
+  //   id: 45,
+  //   brand: "ulaanbaatar",
+  //   code: 'ub1026',
+  //   type: '[classic]',
+  //   images: [
+  //     { src: '/image/products/UB1026200x300.jpg', size: '200x300', color: '#D4AC4Eff' },
+  //   ],
+  //   sizes: ['200x300', '250x350'],
+  //   colors: ['#FFFEED'],
+  // },
   {
     id: 46,
     brand: "bogd",
@@ -816,7 +816,7 @@ export const productsData = [
     ],
     sizes: ['200x300', '200x220', '250x350', '300x400', '300x500'],
     colors: ['#D4AC4Eff'],
-  },
+  }, 
   {
     id: 59,
     brand: "altanbulag",
@@ -1100,10 +1100,52 @@ export const productsData = [
     sizes: ['200x300',],
     colors: ['#216F80', '#FFEBB8'],
   },
-
- 
+     {
+    id: 84,
+    brand: "altanbulag",
+    code: 'SN877',
+    type: '[классик]',
+    images: [
+      { src: '/image/products/ab877200x300.jpg', size: '200x300', color: '#bcb395ff'},
+    ],
+    sizes: ['200x300',],
+    colors: ['#bcb395ff'],
+  },
+   {
+    id: 83,
+    brand: "altanbulag",
+    code: 'SN878',
+    type: '[классик]',
+    images: [
+      { src: '/image/products/ab878200x300.jpg', size: '200x300', color: '#5D9CBC' },
+    ],
+    sizes: ['200x300',],
+    colors: ['#216F80', '#FFEBB8'],
+  }, 
+   {
+    id: 85,
+    brand: "altanbulag",
+    code: 'SN879',
+    type: '[классик]',
+    images: [
+      { src: '/image/products/ab879200x300.jpg', size: '200x300', color: '#5D9CBC' },
+    ],
+    sizes: ['200x300',],
+    colors: ['#216F80', '#FFEBB8'],
+  }, 
+    {
+    id: 86,
+    brand: "altanbulag",
+    code: 'SN877',
+    type: '[классик]',
+    images: [
+      { src: '/image/products/ab6963x4.jpg', size: '255x350', color: '#bcb395ff'},
+      { src: '/image/products/ab6963x4.jpg', size: '300x400', color: '#bcb395ff'},
+    ],
+    sizes: ['255x350','300x400'],
+    colors: ['#216F80'],
+  },
+  
 ];
-
-
 
 
