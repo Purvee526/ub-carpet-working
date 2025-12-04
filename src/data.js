@@ -177,10 +177,9 @@ export const productsData = [
     code: 'bg614',
     type: 'классик',
     images: [
-      { src: '/image/products/BG614/BG61404200x300.jpg', size: '200x300', color: '#02213B' },
-      { src: '/image/products/BG614/BG61403200x300.jpg', size: '250x350', color: '#245B69' },
-      { src: '/image/products/BG614/bg614250x350a.jpg', size: '250x350', color: '#02213B' },
+      { src: '/image/products/BG614/bg614250x350a.jpg', size: '200x300', color: '#02213B' },
       { src: '/image/products/BG614/bg614250x350b.jpg', size: '250x350', color: '#245B69' },
+      { src: '/image/products/BG614/BG61404200x300.jpg', size: '250x350', color: '#02213B' },
     ],
     sizes: ['200x300', '250x350'],
     colors: ['#245B69', '#02213B'],
