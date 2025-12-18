@@ -1099,21 +1099,22 @@ export const productsData = [
     sizes: ['200x300',],
     colors: ['#216F80', '#FFEBB8'],
   },
-     {
-    id: 84,
+    {
+    id: 86,
     brand: "altanbulag",
-    code: 'SN877',
+    code: 'AB877',
     type: '[классик]',
     images: [
-      { src: '/image/products/ab877200x300.jpg', size: '200x300', color: '#bcb395ff'},
+      { src: '/image/products/ab6963x4.jpg', size: '255x350', color: '#bcb395ff'},
+      { src: '/image/products/ab6963x4.jpg', size: '300x400', color: '#bcb395ff'},
     ],
-    sizes: ['200x300',],
-    colors: ['#bcb395ff'],
+    sizes: ['255x350','300x400'],
+    colors: ['#216F80'],
   },
    {
     id: 83,
     brand: "altanbulag",
-    code: 'SN878',
+    code: 'AB878',
     type: '[классик]',
     images: [
       { src: '/image/products/ab878200x300.jpg', size: '200x300', color: '#5D9CBC' },
@@ -1124,7 +1125,7 @@ export const productsData = [
    {
     id: 85,
     brand: "altanbulag",
-    code: 'SN879',
+    code: 'AB879',
     type: '[классик]',
     images: [
       { src: '/image/products/ab879200x300.jpg', size: '200x300', color: '#5D9CBC' },
@@ -1132,19 +1133,6 @@ export const productsData = [
     sizes: ['200x300',],
     colors: ['#216F80', '#FFEBB8'],
   }, 
-    {
-    id: 86,
-    brand: "altanbulag",
-    code: 'SN877',
-    type: '[классик]',
-    images: [
-      { src: '/image/products/ab6963x4.jpg', size: '255x350', color: '#bcb395ff'},
-      { src: '/image/products/ab6963x4.jpg', size: '300x400', color: '#bcb395ff'},
-    ],
-    sizes: ['255x350','300x400'],
-    colors: ['#216F80'],
-  },
-  
 ];
 
 
